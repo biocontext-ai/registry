@@ -1,0 +1,64 @@
+
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "schema-validation"
+dynamic = ["version"]
+description = "scripts for mcp server registry validation"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "BSD-3-Clause"
+authors = []
+urls.Documentation = "https://biocontext.ai"
+urls.Issues = "https://biocontext.ai"
+urls.Source = "https://biocontext.ai"
+dependencies = [
+    "rich",
+    "PyYAML",
+    "jsonschema",
+    "json5",
+    "types-jsonschema>=4.24.0.20250528",
+    "types-pyyaml>=6.0.12.20250516",
+]
+
+[project.scripts]
+validate_mcp_server_schema = "schema_validation.validate_schema:main"
+
+[tool.hatch.version]
+source = "vcs"
+fallback-version = "0.0"
+
+[tool.hatch.envs.default]
+python = "3.11"
+
+[tool.ruff]
+line-length = 120
+lint.select = [
+    "A",
+    "ARG",
+    "B",
+    "C",
+    "DTZ",
+    "E",
+    "EM",
+    "F",
+    "FBT",
+    "I",
+    "ICN",
+    "ISC",
+    "N",
+    "PLC",
+    "PLE",
+    "PLR",
+    "PLW",
+    "RUF",
+    "S",
+    "T",
+    "TID",
+    "UP",
+    "W",
+    "YTT",
+]
+lint.ignore = []

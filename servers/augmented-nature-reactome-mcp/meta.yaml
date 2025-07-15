@@ -1,0 +1,40 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/Augmented-Nature/Reactome-MCP-Server
+
+identifier: Augmented-Nature/Reactome-MCP-Server
+
+name: Unofficial Reactome MCP Server
+
+description: >
+  Model Context Protocol server for accessing Reactome pathway and systems biology data.
+
+codeRepository: https://github.com/Augmented-Nature/Reactome-MCP-Server
+
+url: https://github.com/Augmented-Nature/Reactome-MCP-Server/blob/main/README.md
+
+maintainer:
+  - "@type": Organization
+    name: Augmented Nature
+    identifier: Augmented-Nature
+    url: https://github.com/Augmented-Nature
+
+license: https://spdx.org/licenses/MIT.html
+
+applicationCategory: HealthApplication
+
+keywords:
+  - Reactome
+  - Augmented Nature
+
+datePublished: "2025-06-11"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - TypeScript
+  - JavaScript
+
+featureList:
+  - Reactome

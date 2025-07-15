@@ -1,0 +1,44 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/ChristianHinge/dicom-mcp
+
+identifier: ChristianHinge/dicom-mcp
+
+name: DICOM MCP Server
+
+description: >
+  The dicom-mcp server enables AI assistants to query, read, and move data on DICOM servers (PACS, VNA, etc.)
+
+codeRepository: https://github.com/ChristianHinge/dicom-mcp
+
+url: https://github.com/ChristianHinge/dicom-mcp/blob/master/README.md
+
+maintainer:
+  - "@type": Person
+    name: Christian Hinge
+    identifier: ChristianHinge
+    url: https://github.com/ChristianHinge
+
+license: https://spdx.org/licenses/MIT.html
+
+applicationCategory: HealthApplication
+
+keywords:
+  - DICOM
+  - Medical Imaging
+  - PACS
+  - VNA
+
+datePublished: "2025-06-11"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Python
+
+featureList:
+  - Query Metadata
+  - Read DICOM Reports
+  - Send DICOM Images
+  - Utilities

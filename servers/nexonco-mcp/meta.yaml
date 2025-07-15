@@ -1,0 +1,39 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/Nexgene-Research/nexonco-mcp
+
+identifier: Nexgene-Research/nexonco-mcp
+
+name: Nexonco
+
+description: >
+  Nexonco by Nexgene Research is an MCP server for accessing clinical evidence from the CIViC (Clinical Interpretation of Variants in Cancer) database. It enables fast, flexible search across variants, diseases, drugs, and phenotypes to support precision oncology.
+
+codeRepository: https://github.com/Nexgene-Research/nexonco-mcp
+
+url: https://github.com/Nexgene-Research/nexonco-mcp/blob/main/README.md
+
+maintainer:
+  - "@type": Organization
+    name: Nexgene Research
+    identifier: Nexgene-Research
+    url: https://github.com/Nexgene-Research/
+
+license: https://spdx.org/licenses/MIT.html
+
+applicationCategory: HealthApplication
+
+keywords:
+  - Nexonco
+  - Nexgene Research
+
+datePublished: "2025-07-15"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Python
+
+featureList:
+  - CIViC Db

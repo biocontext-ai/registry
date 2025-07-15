@@ -1,0 +1,75 @@
+name: Create and deploy JSON
+
+on:
+  release:
+    types: [published]
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy-json:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache-dependency-path: "**/pyproject.toml"
+
+      - name: Install uv
+        run: |
+          curl -LsSf https://astral.sh/uv/install.sh | sh
+          echo "$HOME/.cargo/bin" >> $GITHUB_PATH
+
+      - name: Validate schema
+        run: |
+          uv venv
+          uv sync
+          uv run validate_mcp_server_schema
+
+      - name: setup-yq
+        run: |
+          sudo curl -L "https://github.com/mikefarah/yq/releases/download/v4.28.2/yq_linux_amd64" > /usr/local/bin/yq
+          sudo chmod +x /usr/local/bin/yq
+
+      - name: Generate JSON
+        run: |
+          mkdir build
+          touch build/.nojekyll
+          cat servers/**/meta.yaml
+          yq -o=json servers/**/meta.yaml | jq -s . > build/registry.json
+
+      - name: Copy schema.json
+        run: |
+          cp schema.json build/schema.json
+
+      - name: Check if JSON is empty
+        run: |
+          if [ ! -s build/registry.json ] || [ "$(cat build/registry.json)" = "[]" ]; then
+            echo "Error: Generated JSON is empty"
+            exit 1
+          fi
+
+      - name: Check if schema.json exists and is not empty
+        run: |
+          if [ ! -s build/schema.json ]; then
+            echo "Error: schema.json is empty or does not exist"
+            exit 1
+          fi
+
+      - name: Build & Deploy Worker
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          preCommands: |
+            npm install wrangler@latest

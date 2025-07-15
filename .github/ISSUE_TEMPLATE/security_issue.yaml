@@ -1,0 +1,67 @@
+name: Security Issue
+description: Report a security vulnerability (use private reporting for sensitive issues)
+title: "[SECURITY] "
+labels: ["security", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ⚠️ **IMPORTANT**: If this is a sensitive security vulnerability, please use GitHub's **private vulnerability reporting** feature instead of creating a public issue.
+  - type: input
+    id: security_issue_type
+    attributes:
+      label: Security Issue Type
+      description: "Mention the type of security issue, if possible."
+    validations:
+      required: true
+  - type: textarea
+    id: affected_components
+    attributes:
+      label: Affected Components
+      description: "Briefly describe which parts of the package are affected."
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: "Provide a clear and concise description of the security issue."
+    validations:
+      required: true
+  - type: checkboxes
+    id: impact_assessment
+    attributes:
+      label: Impact Assessment
+      description: "What is the potential impact of this vulnerability?"
+      options:
+        - label: Low - Minimal impact
+        - label: Medium - Some user data at risk
+        - label: High - Significant data exposure
+        - label: Critical - Full system compromise
+  - type: textarea
+    id: steps_to_reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: |
+        Provide general steps (avoid detailed exploitation steps in public issues):
+        1.
+        2.
+        3.
+  - type: input
+    id: affected_versions
+    attributes:
+      label: Affected Versions
+      description: "Specify the versions that are affected."
+  - type: textarea
+    id: mitigation
+    attributes:
+      label: Mitigation
+      description: "Are there any temporary workarounds?"
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Context
+      description: "Add any other context about the security issue here."
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        **Note**: For responsible disclosure, please use private reporting for sensitive vulnerabilities.

@@ -1,0 +1,34 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/PDBeurope/PDBe-MCP-Servers
+
+identifier: PDBeurope/PDBe-MCP-Servers
+
+name: PDBe MCP Servers
+
+description: >
+  A set of Model Context Protocol (MCP) servers that provides seamless access to the Protein Data Bank in Europe (PDBe) API and PDBe Graph Database. This server exposes PDBe's comprehensive structural biology data as MCP tools, enabling direct integration with Claude Desktop and other AI-powered applications.
+
+codeRepository: https://github.com/PDBeurope/PDBe-MCP-Servers
+
+url: https://github.com/PDBeurope/PDBe-MCP-Servers/blob/main/README.md
+
+maintainer:
+  - "@type": Organization
+    name: PDB Europe
+    identifier: PDBeurope
+    url: https://github.com/PDBeurope
+
+license: https://spdx.org/licenses/Apache-2.0.html
+
+applicationCategory: HealthApplication
+
+keywords:
+  - PDBe
+  - Protein Data Bank
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Python

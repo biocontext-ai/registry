@@ -1,0 +1,39 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/EBIBioStudies/biostudies-mcp-server
+
+identifier: EBIBioStudies/biostudies-mcp-server
+
+name: Biostudies MCP server
+
+description: >
+  POC implementation for an MCP server for BioStudies search.
+
+codeRepository: https://github.com/EBIBioStudies/biostudies-mcp-server
+
+url: https://github.com/EBIBioStudies/biostudies-mcp-server/blob/main/README.md
+
+maintainer:
+  - "@type": Organization
+    name: EMBL-EBI BioStudies
+    identifier: EBIBioStudies
+    url: https://github.com/EBIBioStudies
+
+license: https://spdx.org/licenses/Apache-2.0.html
+
+applicationCategory: HealthApplication
+
+keywords:
+  - EMBL-EBI
+  - BioStudies
+
+datePublished: "2025-06-11"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Python
+
+featureList:
+  - Literature data

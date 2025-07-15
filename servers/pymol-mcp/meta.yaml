@@ -1,0 +1,38 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/vrtejus/pymol-mcp
+
+identifier: vrtejus/pymol-mcp
+
+name: PyMOL-MCP
+
+description: >
+  PyMOL-MCP connects PyMOL to Claude AI through the Model Context Protocol (MCP), enabling Claude to directly interact with and control PyMOL. This powerful integration allows for conversational structural biology, molecular visualization, and analysis through natural language.
+
+codeRepository: https://github.com/vrtejus/pymol-mcp
+
+url: https://github.com/vrtejus/pymol-mcp/blob/main/README.md
+
+maintainer:
+  - "@type": Person
+    name: Vishnu Rajan Tejus
+    identifier: vrtejus
+    url: https://github.com/vrtejus
+
+license: https://spdx.org/licenses/MIT.html
+
+applicationCategory: HealthApplication
+
+keywords:
+  - PyMOL
+
+datePublished: "2025-06-12"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Python
+
+featureList:
+  - PyMOL

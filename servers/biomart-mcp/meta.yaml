@@ -1,0 +1,26 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/jzinno/biomart-mcp
+additionalType:
+  - https://schema.org/ScholarlyArticle
+  - https://schema.org/SoftwareSourceCode
+identifier: jzinno/biomart-mcp
+name: BioMart MCP
+description: >
+  A MCP server to interface with Biomart.
+codeRepository: https://github.com/jzinno/biomart-mcp
+maintainer:
+  - "@type": Person
+    name: John Zinno
+    identifier: jzinno
+    url: https://github.com/jzinno
+license: https://spdx.org/licenses/MIT.html
+applicationCategory: HealthApplication
+keywords:
+  - biomart
+  - python
+datePublished: "2025-05-30"
+operatingSystem:
+  - Cross-platform
+programmingLanguage:
+  - Python

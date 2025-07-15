@@ -1,0 +1,27 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/JackKuo666/ChEMBL-MCP-Server
+additionalType:
+  - https://schema.org/ScholarlyArticle
+  - https://schema.org/SoftwareSourceCode
+identifier: JackKuo666/ChEMBL-MCP-Server
+name: ChEMBL-MCP-Server
+description: >
+  A FastMCP wrapper server based on the chembl_webresource_client package, providing
+  API access to the ChEMBL database.
+codeRepository: https://github.com/JackKuo666/ChEMBL-MCP-Server
+maintainer:
+  - "@type": Person
+    name: Jack Guo
+    identifier: JackKuo666
+    url: https://github.com/JackKuo666
+license: https://spdx.org/licenses/MIT.html
+applicationCategory: HealthApplication
+keywords:
+  - ChEMBL
+  - python
+datePublished: "2025-05-30"
+operatingSystem:
+  - Cross-platform
+programmingLanguage:
+  - Python

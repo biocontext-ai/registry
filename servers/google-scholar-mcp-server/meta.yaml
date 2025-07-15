@@ -1,0 +1,28 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/JackKuo666/Google-Scholar-MCP-Server
+additionalType:
+  - https://schema.org/ScholarlyArticle
+  - https://schema.org/SoftwareSourceCode
+identifier: JackKuo666/Google-Scholar-MCP-Server
+name: Google Scholar MCP Server
+description: >
+  The Google Scholar MCP Server provides a bridge between AI assistants and Google
+  Scholar through the Model Context Protocol (MCP). It allows AI models to search
+  for academic papers and access their content in a programmatic way.
+codeRepository: https://github.com/JackKuo666/Google-Scholar-MCP-Server
+maintainer:
+  - "@type": Person
+    name: Jack Guo
+    identifier: JackKuo666
+    url: https://github.com/JackKuo666
+license: https://spdx.org/licenses/MIT.html
+applicationCategory: EducationApplication
+keywords:
+  - Google Scholar
+  - python
+datePublished: "2025-05-30"
+operatingSystem:
+  - Cross-platform
+programmingLanguage:
+  - Python

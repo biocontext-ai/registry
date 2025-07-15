@@ -1,0 +1,27 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/navisbio/mcp_bigquery_biomedical
+additionalType:
+  - https://schema.org/ScholarlyArticle
+  - https://schema.org/SoftwareSourceCode
+identifier: navisbio/mcp_bigquery_biomedical
+name: MCP BigQuery Biomedical Server
+description: >
+  A Model Context Protocol (MCP) server implementation that provides access to Google
+  BigQuery biomedical datasets.
+codeRepository: https://github.com/navisbio/mcp_bigquery_biomedical
+maintainer:
+  - "@type": Person
+    name: navisbio
+    identifier: navisbio
+    url: https://github.com/navisbio
+license: https://spdx.org/licenses/GPL-3.0-or-later.html
+applicationCategory: HealthApplication
+keywords:
+  - AACT
+  - python
+datePublished: "2025-05-30"
+operatingSystem:
+  - Cross-platform
+programmingLanguage:
+  - Python

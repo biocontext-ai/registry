@@ -1,0 +1,28 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/JackKuo666/PubChem-MCP-Server
+additionalType:
+  - https://schema.org/ScholarlyArticle
+  - https://schema.org/SoftwareSourceCode
+identifier: JackKuo666/PubChem-MCP-Server
+name: PubChem MCP Server
+description: >
+  The PubChem MCP Server provides a bridge between AI assistants and PubChem's chemical
+  database through the Model Context Protocol (MCP). It allows AI models to search
+  for chemical compounds and access their detailed information in a programmatic way.
+codeRepository: https://github.com/JackKuo666/PubChem-MCP-Server
+maintainer:
+  - "@type": Person
+    name: Jack Guo
+    identifier: JackKuo666
+    url: https://github.com/JackKuo666
+license: https://spdx.org/licenses/MIT.html
+applicationCategory: HealthApplication
+keywords:
+  - PubChem
+  - python
+datePublished: "2025-05-30"
+operatingSystem:
+  - Cross-platform
+programmingLanguage:
+  - Python

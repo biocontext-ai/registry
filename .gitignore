@@ -1,0 +1,10 @@
+.DS_STORE
+__pycache__/
+.ruff_cache/
+.mypy_cache/
+.venv
+dist/
+
+/.vscode/
+.cache
+node_modules

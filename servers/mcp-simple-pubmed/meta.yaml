@@ -1,0 +1,26 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/andybrandt/mcp-simple-pubmed
+additionalType:
+  - https://schema.org/ScholarlyArticle
+  - https://schema.org/SoftwareSourceCode
+identifier: andybrandt/mcp-simple-pubmed
+name: MCP Simple PubMed
+description: >
+  An MCP server that provides access to PubMed articles through the Entrez API.
+codeRepository: https://github.com/andybrandt/mcp-simple-pubmed
+maintainer:
+  - "@type": Person
+    name: Andy Brandt
+    identifier: andybrandt
+    url: https://github.com/andybrandt
+license: https://spdx.org/licenses/MIT.html
+applicationCategory: HealthApplication
+keywords:
+  - PubMed
+  - python
+datePublished: "2025-05-30"
+operatingSystem:
+  - Cross-platform
+programmingLanguage:
+  - Python

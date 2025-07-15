@@ -1,0 +1,11 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "biocontext-registry",
+  "compatibility_date": "2025-05-06",
+  "main": "./deploy/index.js",
+  "assets": {
+    "directory": "./build/",
+    "run_worker_first": true,
+    "binding": "ASSETS"
+  }
+}

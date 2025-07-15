@@ -1,0 +1,28 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/grll/pubmedmcp
+additionalType:
+  - https://schema.org/ScholarlyArticle
+  - https://schema.org/SoftwareSourceCode
+identifier: grll/pubmedmcp
+name: PubMed MCP
+description: >
+  A MCP server that allows to search and fetch articles from PubMed. PubMed is a database
+  of over 35 million citations for biomedical literature from MEDLINE, life science
+  journals, and online books.
+codeRepository: https://github.com/grll/pubmedmcp
+maintainer:
+  - "@type": Person
+    name: Guillaume Raille
+    identifier: grll
+    url: https://github.com/grll
+license: https://spdx.org/licenses/MIT.html
+applicationCategory: HealthApplication
+keywords:
+  - PubMed
+  - python
+datePublished: "2025-05-30"
+operatingSystem:
+  - Cross-platform
+programmingLanguage:
+  - Python

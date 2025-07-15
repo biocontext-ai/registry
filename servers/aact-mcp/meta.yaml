@@ -1,0 +1,29 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/navisbio/AACT_MCP
+additionalType:
+  - https://schema.org/ScholarlyArticle
+  - https://schema.org/SoftwareSourceCode
+identifier: navisbio/AACT_MCP
+name: AACT MCP
+description: >
+  A Model Context Protocol (MCP) server implementation that provides access to the
+  AACT (Aggregate Analysis of ClinicalTrials.gov) database using the FastMCP framework.
+  This server allows AI assistants to directly query clinical trial data from the
+  ClinicalTrials.gov database.
+codeRepository: https://github.com/navisbio/AACT_MCP
+maintainer:
+  - "@type": Person
+    name: navisbio
+    identifier: navisbio
+    url: https://github.com/navisbio
+license: https://spdx.org/licenses/GPL-3.0-or-later.html
+applicationCategory: HealthApplication
+keywords:
+  - AACT
+  - python
+datePublished: "2025-05-30"
+operatingSystem:
+  - Cross-platform
+programmingLanguage:
+  - Python

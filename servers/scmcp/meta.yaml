@@ -1,0 +1,45 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/scmcphub/scmcp
+
+identifier: scmcphub/scmcp
+
+name: SCMCP
+
+description: >
+  An MCP server for scRNA-Seq analysis with natural language!
+
+codeRepository: https://github.com/scmcphub/scmcp
+
+url: https://docs.scmcphub.org
+
+maintainer:
+  - "@type": Organization
+    name: scmcphub
+    identifier: scmcphub
+    url: https://github.com/scmcphub/
+
+license: https://spdx.org/licenses/BSD-3-Clause.html
+
+applicationCategory: HealthApplication
+
+keywords:
+  - scmcp
+  - single-cell
+  - RNA sequencing
+  - scverse
+
+datePublished: "2025-06-11"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Python
+
+featureList:
+  - decoupler
+  - cellrank
+  - liana
+  - scanpy
+  - infercnv
