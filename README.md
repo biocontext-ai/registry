@@ -10,6 +10,8 @@ The primary purpose is to enhance the discoverability of MCP servers for biomedi
 
 Inclusion in this list indicates that a server meets certain baseline criteria as described below. It **does not** constitute an endorsement or suggest that a comprehensive evaluation has been conducted, nor does it account for subsequent modifications to the server.
 
+Accepted servers will be available in the [Registry UI](https://biocontext.ai/registry), in the [Registry JSON](https://biocontext.ai/registry.json) and will be automatically posted on our [Bluesky account](https://bsky.app/profile/biocontext.ai).
+
 **Tip:** To receive alerts about newly added MCP servers, simply use GitHub's "watch" feature for this repository.
 
 ## How to Add Your MCP Server to the List
