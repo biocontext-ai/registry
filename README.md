@@ -62,7 +62,7 @@ Additionally, the following are strongly encouraged (and may become mandatory in
 
 ## MCP Server Submission Checklist
 
-Please copy and complete the following checklist in your pull request description:
+Please complete the following checklist in your pull request description. This checklist should be included automatically when opening new PRs.
 
 - [ ] **Unique Identifier**: The `id` field is unique and follows the format `https://github.com/<github_user>/<repository_name>`
 - [ ] **Schema Compliance**: The `meta.yaml` file fully complies with the schema defined in `schema.json`. I have run the `pre-commit` hook to confirm.
