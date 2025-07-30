@@ -3,8 +3,6 @@ name: Create and deploy JSON
 on:
   release:
     types: [published]
-  pull_request:
-    branches: [main]
   push:
     branches: [main]
   workflow_dispatch:
