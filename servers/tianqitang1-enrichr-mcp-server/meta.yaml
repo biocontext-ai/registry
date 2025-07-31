@@ -1,0 +1,38 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/tianqitang1/enrichr-mcp-server
+
+identifier: tianqitang1/enrichr-mcp-server
+
+name: Enrichr MCP Server
+
+description: >
+  A Model Context Protocol (MCP) server that provides gene set enrichment analysis using the Enrichr API. This server supports all available gene set libraries from Enrichr and returns only statistically significant results (corrected-$p$ < 0.05) for LLM tools to interpret.
+
+codeRepository: https://github.com/tianqitang1/enrichr-mcp-server
+
+url: https://github.com/tianqitang1/enrichr-mcp-server/blob/main/README.md
+
+maintainer:
+  - "@type": Person
+    name: View tianqitang1's full-sized avatar Tianqi Tang
+    identifier: tianqitang1
+    url: https://github.com/tianqitang1
+
+license: https://spdx.org/licenses/MIT.html
+
+applicationCategory: HealthApplication
+
+keywords:
+  - Geneset enrichment
+
+datePublished: "2025-08-01"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - TypeScript
+
+featureList:
+  - Enrichr
