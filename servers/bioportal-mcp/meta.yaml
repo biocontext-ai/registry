@@ -1,0 +1,35 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/ncbo/bioportal-mcp
+
+identifier: ncbo/bioportal-mcp
+
+name: BioPortal MCP
+
+description: >
+  A Model Context Protocol (MCP) server for interacting with the BioPortal API to search and retrieve ontology terms.
+
+codeRepository: https://github.com/ncbo/bioportal-mcp
+
+url: https://github.com/ncbo/bioportal-mcp/blob/main/README.md
+
+maintainer:
+  - "@type": Organization
+    name: National Center for Biomedical Ontology
+    identifier: ncbo
+    url: https://github.com/ncbo
+
+license: https://spdx.org/licenses/BSD-3-Clause.html
+
+applicationCategory: ReferenceApplication
+
+keywords:
+  - metadata
+
+datePublished: "2025-08-06"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Python
