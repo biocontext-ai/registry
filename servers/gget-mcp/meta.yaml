@@ -8,7 +8,7 @@ name: Holy-BIO-MCP's gget server
 
 description: >
   A Model Context Protocol server for the gget bioinformatics library.
-See details about gget: https://pachterlab.github.io/gget/
+  See details about gget: https://pachterlab.github.io/gget/
 
 codeRepository: https://github.com/longevity-genie/gget-mcp
 
