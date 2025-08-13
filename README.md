@@ -1,8 +1,8 @@
 # BioContextAI Registry MCP Servers
 
 [![BioContextAI - Registry](https://img.shields.io/badge/Registry-package?style=flat&label=BioContextAI&labelColor=%23fff&color=%233555a1&link=https://biocontext.ai/registry)](https://biocontext.ai/registry)
-[![Create and deploy JSON](https://github.com/biocontext-ai/registry-dev/actions/workflows/deploy-json.yaml/badge.svg)](https://github.com/biocontext-ai/registry-dev/actions/workflows/deploy-json.yaml)
-[![Validate MCP schema](https://github.com/biocontext-ai/registry-dev/actions/workflows/validate-schema.yaml/badge.svg)](https://github.com/biocontext-ai/registry-dev/actions/workflows/validate-schema.yaml)
+[![Create and deploy JSON](https://github.com/biocontext-ai/registry/actions/workflows/deploy-json.yaml/badge.svg)](https://github.com/biocontext-ai/registry/actions/workflows/deploy-json.yaml)
+[![Validate MCP schema](https://github.com/biocontext-ai/registry/actions/workflows/validate-schema.yaml/badge.svg)](https://github.com/biocontext-ai/registry/actions/workflows/validate-schema.yaml)
 
 This repository maintains a curated list of MCP servers within the **BioContextAI Registry** that appear on https://biocontext.ai and contribute to the BioContextAI project.
 
