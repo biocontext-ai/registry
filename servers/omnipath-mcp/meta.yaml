@@ -1,0 +1,40 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/saezlab/omnipath-next
+
+identifier: saezlab/omnipath-next
+
+name: Omnipath MCP server
+
+description: >
+  OmniPath integrates data from 150+ resources to provide a comprehensive view of molecular interactions, pathways, and biological annotations.
+This MCP server enables LLMs to execute SQL queries against the Omnipath database.
+The tool description includes context about the database schema and some template queries to facilitate accurate query generation.
+
+codeRepository: https://github.com/saezlab/omnipath-next
+
+installUrl: https://explore.omnipathdb.org/api/mcp
+
+maintainer:
+  - "@type": Person
+    name: Jonathan Schaul
+    identifier: jonsch1
+
+license: https://spdx.org/licenses/GPL-3.0-only.html
+
+applicationCategory: HealthApplication
+
+keywords:
+  - pathway
+  - molecular interactions
+  - biological annoations
+  - knowledge bases
+  - basic research
+
+datePublished: "2025-08-19"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - TypeScript
