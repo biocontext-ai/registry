@@ -11,12 +11,10 @@ description: >
 
 codeRepository: https://github.com/Augmented-Nature/Reactome-MCP-Server
 
-url: https://github.com/Augmented-Nature/Reactome-MCP-Server/blob/main/README.md
-
 softwareHelp:
   "@type": CreativeWork
-  url: https://github.com/Augmented-Nature/Reactome-MCP-Server/blob/main/README.md
   name: Documentation
+  url: https://github.com/Augmented-Nature/Reactome-MCP-Server/blob/main/README.md
 
 maintainer:
   - "@type": Organization

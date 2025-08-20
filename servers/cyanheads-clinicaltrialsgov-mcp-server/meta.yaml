@@ -13,8 +13,6 @@ description: >
 
 codeRepository: https://github.com/cyanheads/clinicaltrialsgov-mcp-server
 
-url: https://www.npmjs.com/package/clinicaltrialsgov-mcp-server
-
 softwareHelp:
   "@type": CreativeWork
   url: https://www.npmjs.com/package/clinicaltrialsgov-mcp-server

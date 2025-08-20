@@ -13,8 +13,6 @@ description: >
 
 codeRepository: https://github.com/cyanheads/pubchem-mcp-server
 
-url: https://www.npmjs.com/package/@cyanheads/pubchem-mcp-server
-
 softwareHelp:
   "@type": CreativeWork
   url: https://www.npmjs.com/package/@cyanheads/pubchem-mcp-server

@@ -13,8 +13,6 @@ description: >
 
 codeRepository: https://github.com/tianqitang1/enrichr-mcp-server
 
-url: https://github.com/tianqitang1/enrichr-mcp-server/blob/main/README.md
-
 softwareHelp:
   "@type": CreativeWork
   url: https://github.com/tianqitang1/enrichr-mcp-server/blob/main/README.md

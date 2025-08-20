@@ -11,8 +11,6 @@ description: >
 
 codeRepository: https://github.com/effieklimi/ensembl-mcp-server
 
-url: https://github.com/effieklimi/ensembl-mcp-server/blob/main/README.md
-
 softwareHelp:
   "@type": CreativeWork
   url: https://github.com/effieklimi/ensembl-mcp-server/blob/main/README.md

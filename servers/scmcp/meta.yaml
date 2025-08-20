@@ -11,8 +11,6 @@ description: >
 
 codeRepository: https://github.com/scmcphub/scmcp
 
-url: https://docs.scmcphub.org
-
 softwareHelp:
   "@type": CreativeWork
   url: https://docs.scmcphub.org

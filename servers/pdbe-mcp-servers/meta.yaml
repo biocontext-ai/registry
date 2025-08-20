@@ -13,8 +13,6 @@ description: >
 
 codeRepository: https://github.com/PDBeurope/PDBe-MCP-Servers
 
-url: https://github.com/PDBeurope/PDBe-MCP-Servers/blob/main/README.md
-
 softwareHelp:
   "@type": CreativeWork
   url: https://github.com/PDBeurope/PDBe-MCP-Servers/blob/main/README.md

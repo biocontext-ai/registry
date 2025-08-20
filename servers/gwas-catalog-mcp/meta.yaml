@@ -13,8 +13,6 @@ description: >
 
 codeRepository: https://github.com/koido/gwas-catalog-mcp
 
-url: https://github.com/koido/gwas-catalog-mcp/blob/main/README.md
-
 softwareHelp:
   "@type": CreativeWork
   url: https://github.com/koido/gwas-catalog-mcp/blob/main/README.md

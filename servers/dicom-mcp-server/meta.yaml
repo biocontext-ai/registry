@@ -12,8 +12,6 @@ description: >
 
 codeRepository: https://github.com/ChristianHinge/dicom-mcp
 
-url: https://github.com/ChristianHinge/dicom-mcp/blob/master/README.md
-
 softwareHelp:
   "@type": CreativeWork
   url: https://github.com/ChristianHinge/dicom-mcp/blob/master/README.md

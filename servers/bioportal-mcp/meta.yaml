@@ -12,8 +12,6 @@ description: >
 
 codeRepository: https://github.com/ncbo/bioportal-mcp
 
-url: https://github.com/ncbo/bioportal-mcp/blob/main/README.md
-
 softwareHelp:
   "@type": CreativeWork
   url: https://github.com/ncbo/bioportal-mcp/blob/main/README.md
