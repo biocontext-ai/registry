@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
   schedule:
     # Run on Mondays and Thursdays at 17:00 UTC
-    - cron: '0 17 * * 1,4'
+    - cron: "0 17 * * 1,4"
 
 jobs:
   deploy-json:
