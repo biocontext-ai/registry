@@ -7,11 +7,17 @@ identifier: ncbo/bioportal-mcp
 name: BioPortal MCP
 
 description: >
-  A Model Context Protocol (MCP) server for interacting with the BioPortal API to search and retrieve ontology terms.
+  A Model Context Protocol (MCP) server for interacting with the BioPortal API to search and retrieve
+  ontology terms.
 
 codeRepository: https://github.com/ncbo/bioportal-mcp
 
 url: https://github.com/ncbo/bioportal-mcp/blob/main/README.md
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://github.com/ncbo/bioportal-mcp/blob/main/README.md
+  name: Documentation
 
 maintainer:
   - "@type": Organization

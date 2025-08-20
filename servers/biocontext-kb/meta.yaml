@@ -1,16 +1,30 @@
 "@context": https://schema.org
 "@type": SoftwareApplication
 "@id": https://github.com/biocontext-ai/knowledgebase-mcp
+
 additionalType:
   - https://schema.org/ScholarlyArticle
   - https://schema.org/SoftwareSourceCode
+
 identifier: biocontext-ai/knowledgebase-mcp
+
 name: BioContextAI Knowledgebase MCP
+
 description: >
-  MCP server providing access to a variety of biological resources, including STRINGDb, Open Targets, Reactome, UniProt, Human Protein Atlas, PanglaoDb, grants.gov, EuropePMC, AlphaFold, OLS, Ensembl, Antibody Registry, KEGG, Drugs@openFDA, ClinicalTrials.gov, bioRxiv, Google Scholar, InterPro and PRIDE. Available via `pip`/`uv` as `biocontext_kb`.
+  MCP server providing access to a variety of biological resources, including STRINGDb, Open Targets,
+  Reactome, UniProt, Human Protein Atlas, PanglaoDb, grants.gov, EuropePMC, AlphaFold, OLS, Ensembl, Antibody
+  Registry, KEGG, Drugs@openFDA, ClinicalTrials.gov, bioRxiv, Google Scholar, InterPro and PRIDE. Available
+  via `pip`/`uv` as `biocontext_kb`.
+
 codeRepository: https://github.com/biocontext-ai/knowledgebase-mcp
-url: https://biocontext.ai
-installUrl: https://mcp.biocontext.ai/mcp/
+
+url: https://mcp.biocontext.ai/mcp/
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://biocontext.ai
+  name: Documentation
+
 maintainer:
   - "@type": Organization
     name: BioContextAI
@@ -20,12 +34,16 @@ maintainer:
     name: Malte Kuehl
     identifier: maltekuehl
     url: https://github.com/maltekuehl
+
 license: https://spdx.org/licenses/Apache-2.0.html
+
 applicationCategory: HealthApplication
+
 keywords:
   - biocontext
   - knowledge bases
   - basic research
+
 featureList:
   - STRINGDb
   - Open Targets
@@ -46,8 +64,11 @@ featureList:
   - Google Scholar
   - InterPro
   - PRIDE
+
 datePublished: "2025-07-14"
+
 operatingSystem:
   - Cross-platform
+
 programmingLanguage:
   - Python

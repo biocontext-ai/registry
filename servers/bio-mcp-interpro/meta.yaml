@@ -7,11 +7,18 @@ identifier: bio-mcp/bio-mcp-interpro
 name: bio-mcp-interpro
 
 description: >
-  MCP (Model Context Protocol) server for InterPro protein domain and family analysis. This MCP server provides access to InterProScan functionality, allowing AI assistants to perform protein domain and family analysis, functional annotation, and GO term mapping.
+  MCP (Model Context Protocol) server for InterPro protein domain and family analysis. This MCP server
+  provides access to InterProScan functionality, allowing AI assistants to perform protein domain and
+  family analysis, functional annotation, and GO term mapping.
 
 codeRepository: https://github.com/bio-mcp/bio-mcp-interpro
 
 url: https://github.com/bio-mcp/bio-mcp-interpro/blob/main/README.md
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://github.com/bio-mcp/bio-mcp-interpro/blob/main/README.md
+  name: Documentation
 
 maintainer:
   - "@type": Organization
@@ -26,6 +33,9 @@ applicationCategory: HealthApplication
 keywords:
   - bio-mcp
 
+featureList:
+  - Interpro
+
 datePublished: "2025-07-15"
 
 operatingSystem:
@@ -33,6 +43,3 @@ operatingSystem:
 
 programmingLanguage:
   - Python
-
-featureList:
-  - Interpro

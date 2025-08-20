@@ -7,11 +7,18 @@ identifier: Augmented-Nature/BioThings-MCP-Server
 name: BioThings MCP Server
 
 description: >
-  A Model Context Protocol (MCP) server that provides access to the BioThings.io ecosystem of APIs, including MyGene.info and MyVariant.info. This server enables seamless integration of comprehensive gene and variant annotation data into your workflows.
+  A Model Context Protocol (MCP) server that provides access to the BioThings.io ecosystem of APIs, including
+  MyGene.info and MyVariant.info. This server enables seamless integration of comprehensive gene and variant
+  annotation data into your workflows.
 
 codeRepository: https://github.com/Augmented-Nature/BioThings-MCP-Server
 
 url: https://github.com/Augmented-Nature/BioThings-MCP-Server/blob/main/README.md
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://github.com/Augmented-Nature/BioThings-MCP-Server/blob/main/README.md
+  name: Documentation
 
 maintainer:
   - "@type": Organization

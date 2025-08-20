@@ -7,11 +7,17 @@ identifier: ChristianHinge/dicom-mcp
 name: DICOM MCP Server
 
 description: >
-  The dicom-mcp server enables AI assistants to query, read, and move data on DICOM servers (PACS, VNA, etc.)
+  The dicom-mcp server enables AI assistants to query, read, and move data on DICOM servers (PACS, VNA,
+  etc.)
 
 codeRepository: https://github.com/ChristianHinge/dicom-mcp
 
 url: https://github.com/ChristianHinge/dicom-mcp/blob/master/README.md
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://github.com/ChristianHinge/dicom-mcp/blob/master/README.md
+  name: Documentation
 
 maintainer:
   - "@type": Person
@@ -29,6 +35,12 @@ keywords:
   - PACS
   - VNA
 
+featureList:
+  - Query Metadata
+  - Read DICOM Reports
+  - Send DICOM Images
+  - Utilities
+
 datePublished: "2025-06-11"
 
 operatingSystem:
@@ -36,9 +48,3 @@ operatingSystem:
 
 programmingLanguage:
   - Python
-
-featureList:
-  - Query Metadata
-  - Read DICOM Reports
-  - Send DICOM Images
-  - Utilities

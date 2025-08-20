@@ -13,6 +13,11 @@ codeRepository: https://github.com/effieklimi/ensembl-mcp-server
 
 url: https://github.com/effieklimi/ensembl-mcp-server/blob/main/README.md
 
+softwareHelp:
+  "@type": CreativeWork
+  url: https://github.com/effieklimi/ensembl-mcp-server/blob/main/README.md
+  name: Documentation
+
 maintainer:
   - "@type": Person
     name: Effie Klimi
@@ -26,6 +31,14 @@ applicationCategory: HealthApplication
 keywords:
   - Ensembl
 
+featureList:
+  - Lookup
+  - Variation
+  - Comparative genomics
+  - Ontology search
+  - Sequences
+  - Overlap
+
 datePublished: "2025-06-11"
 
 operatingSystem:
@@ -34,11 +47,3 @@ operatingSystem:
 programmingLanguage:
   - JavaScript
   - TypeScript
-
-featureList:
-  - Lookup
-  - Variation
-  - Comparative genomics
-  - Ontology search
-  - Sequences
-  - Overlap

@@ -1,28 +1,39 @@
 "@context": https://schema.org
 "@type": SoftwareApplication
 "@id": https://github.com/TakumiY235/uniprot-mcp-server
+
 additionalType:
   - https://schema.org/ScholarlyArticle
   - https://schema.org/SoftwareSourceCode
+
 identifier: TakumiY235/uniprot-mcp-server
+
 name: UniProt MCP Server
+
 description: >
-  A Model Context Protocol (MCP) server that provides access to UniProt protein information.
-  This server allows AI assistants to fetch protein function and sequence information
-  directly from UniProt.
+  A Model Context Protocol (MCP) server that provides access to UniProt protein information. This server
+  allows AI assistants to fetch protein function and sequence information directly from UniProt.
+
 codeRepository: https://github.com/TakumiY235/uniprot-mcp-server
+
 maintainer:
   - "@type": Person
     name: TakumiY235
     identifier: TakumiY235
     url: https://github.com/TakumiY235
+
 license: https://spdx.org/licenses/MIT.html
+
 applicationCategory: HealthApplication
+
 keywords:
   - UniProt
   - python
+
 datePublished: "2025-05-30"
+
 operatingSystem:
   - Cross-platform
+
 programmingLanguage:
   - Python

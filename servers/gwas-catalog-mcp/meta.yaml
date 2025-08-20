@@ -7,11 +7,18 @@ identifier: koido/gwas-catalog-mcp
 name: GWAS Catalog MCP Server
 
 description: >
-  This MCP server provides a programmatic interface to the GWAS Catalog REST API, enabling access to GWAS study, variant, trait, and association data. The server handles large result sets automatically by providing both in-memory results and file-based storage options.
+  This MCP server provides a programmatic interface to the GWAS Catalog REST API, enabling access to GWAS
+  study, variant, trait, and association data. The server handles large result sets automatically by providing
+  both in-memory results and file-based storage options.
 
 codeRepository: https://github.com/koido/gwas-catalog-mcp
 
 url: https://github.com/koido/gwas-catalog-mcp/blob/main/README.md
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://github.com/koido/gwas-catalog-mcp/blob/main/README.md
+  name: Documentation
 
 maintainer:
   - "@type": Person

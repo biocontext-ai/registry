@@ -7,11 +7,18 @@ identifier: cyanheads/pubchem-mcp-server
 name: PubChem MCP Server
 
 description: >
-  An MCP (Model Context Protocol) server providing comprehensive access to PubChem's vast chemical information database. Enables LLMs and AI agents to search, retrieve, and analyze chemical compounds, substances, and bioassays through the PubChem PUG REST API.
+  An MCP (Model Context Protocol) server providing comprehensive access to PubChem's vast chemical information
+  database. Enables LLMs and AI agents to search, retrieve, and analyze chemical compounds, substances,
+  and bioassays through the PubChem PUG REST API.
 
 codeRepository: https://github.com/cyanheads/pubchem-mcp-server
 
 url: https://www.npmjs.com/package/@cyanheads/pubchem-mcp-server
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://www.npmjs.com/package/@cyanheads/pubchem-mcp-server
+  name: Documentation
 
 maintainer:
   - "@type": Person
@@ -26,6 +33,9 @@ applicationCategory: HealthApplication
 keywords:
   - PubChem
 
+featureList:
+  - PubChem
+
 datePublished: "2025-07-14"
 
 operatingSystem:
@@ -34,6 +44,3 @@ operatingSystem:
 programmingLanguage:
   - TypeScript
   - JavaScript
-
-featureList:
-  - PubChem

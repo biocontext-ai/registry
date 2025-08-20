@@ -7,12 +7,16 @@ identifier: longevity-genie/gget-mcp
 name: Holy-BIO-MCP's gget server
 
 description: >
-  A Model Context Protocol server for the gget bioinformatics library.
-  See details about gget: https://pachterlab.github.io/gget/
+  A Model Context Protocol server for the gget bioinformatics library. See details about gget: https://pachterlab.github.io/gget/
 
 codeRepository: https://github.com/longevity-genie/gget-mcp
 
 url: https://github.com/longevity-genie/gget-mcp/blob/main/README.md
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://github.com/longevity-genie/gget-mcp/blob/main/README.md
+  name: Documentation
 
 maintainer:
   - "@type": Person
@@ -40,18 +44,13 @@ keywords:
   - alphafold
   - ucsc
 
-datePublished: "2025-08-13"
-
-operatingSystem:
-  - Cross-platform
-
-programmingLanguage:
-  - Python
-
 featureList:
-  - gget_search - General biological term search across gene names and descriptions using Ensembl database
-  - gget_search_genes - Enhanced gene symbol search with batch processing and descriptive term support
-  - gget_info - Detailed gene/transcript metadata retrieval using Ensembl IDs from multiple databases
+  - gget_search - General biological term search across gene names and descriptions using Ensembl
+    database
+  - gget_search_genes - Enhanced gene symbol search with batch processing and descriptive term
+    support
+  - gget_info - Detailed gene/transcript metadata retrieval using Ensembl IDs from multiple
+    databases
   - gget_seq - Fetch nucleotide/amino acid sequences (FASTA) from genes or transcripts via Ensembl
   - gget_ref - Download reference genomes and annotations (GTF, FASTA) by species from Ensembl
   - gget_blast - BLAST nucleotide/amino acid sequences against NCBI databases (nt, nr, swissprot)
@@ -69,3 +68,11 @@ featureList:
   - gget_opentargets - Query OpenTargets for diseases, drugs, and clinical data by Ensembl ID
   - gget_cellxgene - Query single-cell RNA-seq data from CZ CELLxGENE Discover using Census
   - gget_setup - Install third-party dependencies for gget modules (alphafold, cellxgene, elm)
+
+datePublished: "2025-08-13"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Python

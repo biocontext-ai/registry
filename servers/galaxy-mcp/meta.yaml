@@ -7,11 +7,18 @@ identifier: galaxyproject/galaxy-mcp
 name: Galaxy MCP Server
 
 description: >
-  This project provides a Model Context Protocol (MCP) server for interacting with the Galaxy bioinformatics platform. It enables AI assistants and other clients to connect to Galaxy instances, search and execute tools, manage workflows, and access other features of the Galaxy ecosystem.
+  This project provides a Model Context Protocol (MCP) server for interacting with the Galaxy bioinformatics
+  platform. It enables AI assistants and other clients to connect to Galaxy instances, search and execute
+  tools, manage workflows, and access other features of the Galaxy ecosystem.
 
 codeRepository: https://github.com/galaxyproject/galaxy-mcp
 
 url: https://github.com/galaxyproject/galaxy-mcp/blob/main/README.md
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://github.com/galaxyproject/galaxy-mcp/blob/main/README.md
+  name: Documentation
 
 maintainer:
   - "@type": Organization
@@ -26,6 +33,9 @@ applicationCategory: HealthApplication
 keywords:
   - Galaxy Project
 
+featureList:
+  - Galaxy
+
 datePublished: "2025-07-15"
 
 operatingSystem:
@@ -33,6 +43,3 @@ operatingSystem:
 
 programmingLanguage:
   - Python
-
-featureList:
-  - Galaxy
