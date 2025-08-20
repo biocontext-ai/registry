@@ -1,32 +1,43 @@
 "@context": https://schema.org
 "@type": SoftwareApplication
 "@id": https://github.com/genomoncology/biomcp
+
 additionalType:
   - https://schema.org/ScholarlyArticle
   - https://schema.org/SoftwareSourceCode
+
 identifier: genomoncology/biomcp
+
 name: BioMCP
+
 description: >
-  BioMCP is an open source (MIT License) toolkit that empowers AI assistants and agents
-  with specialized biomedical knowledge. Built following the Model Context Protocol
-  (MCP), it connects AI systems to authoritative biomedical data sources, enabling
-  them to answer questions about clinical trials, scientific literature, and genomic
-  variants with precision and depth.
+  BioMCP is an open source (MIT License) toolkit that empowers AI assistants and agents with specialized
+  biomedical knowledge. Built following the Model Context Protocol (MCP), it connects AI systems to authoritative
+  biomedical data sources, enabling them to answer questions about clinical trials, scientific literature,
+  and genomic variants with precision and depth.
+
 codeRepository: https://github.com/genomoncology/biomcp
+
 maintainer:
   - "@type": Organization
     name: genomoncology
     identifier: genomoncology
     url: https://github.com/genomoncology
+
 license: https://spdx.org/licenses/MIT.html
+
 applicationCategory: HealthApplication
+
 keywords:
   - PubMed
   - ClinicalTrials
   - MyVariant
   - python
+
 datePublished: "2025-05-30"
+
 operatingSystem:
   - Cross-platform
+
 programmingLanguage:
   - Python

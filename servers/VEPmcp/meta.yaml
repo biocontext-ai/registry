@@ -7,11 +7,18 @@ identifier: not-a-feature/VEPmcp
 name: Variant Effect Prediction using Ensembl
 
 description: >
-  VEPmcp is a Model Context Protocol (MCP) server for the Ensembl Variant Effect Predictor (VEP) API. It enables annotation and effect prediction of genetic variants, with full support for batch and single queries, and is designed for seamless integration with MCP-compatible clients.
+  VEPmcp is a Model Context Protocol (MCP) server for the Ensembl Variant Effect Predictor (VEP) API.
+  It enables annotation and effect prediction of genetic variants, with full support for batch and single
+  queries, and is designed for seamless integration with MCP-compatible clients.
 
 codeRepository: https://github.com/not-a-feature/VEPmcp
 
 url: https://github.com/not-a-feature/VEPmcp/blob/main/README.md
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://github.com/not-a-feature/VEPmcp/blob/main/README.md
+  name: Documentation
 
 maintainer:
   - "@type": Person

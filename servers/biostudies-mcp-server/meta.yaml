@@ -13,6 +13,11 @@ codeRepository: https://github.com/EBIBioStudies/biostudies-mcp-server
 
 url: https://github.com/EBIBioStudies/biostudies-mcp-server/blob/main/README.md
 
+softwareHelp:
+  "@type": CreativeWork
+  url: https://github.com/EBIBioStudies/biostudies-mcp-server/blob/main/README.md
+  name: Documentation
+
 maintainer:
   - "@type": Organization
     name: EMBL-EBI BioStudies
@@ -27,6 +32,9 @@ keywords:
   - EMBL-EBI
   - BioStudies
 
+featureList:
+  - Literature data
+
 datePublished: "2025-06-11"
 
 operatingSystem:
@@ -34,6 +42,3 @@ operatingSystem:
 
 programmingLanguage:
   - Python
-
-featureList:
-  - Literature data

@@ -13,6 +13,11 @@ codeRepository: https://github.com/scmcphub/scmcp
 
 url: https://docs.scmcphub.org
 
+softwareHelp:
+  "@type": CreativeWork
+  url: https://docs.scmcphub.org
+  name: Documentation
+
 maintainer:
   - "@type": Organization
     name: scmcphub
@@ -29,6 +34,13 @@ keywords:
   - RNA sequencing
   - scverse
 
+featureList:
+  - decoupler
+  - cellrank
+  - liana
+  - scanpy
+  - infercnv
+
 datePublished: "2025-06-11"
 
 operatingSystem:
@@ -36,10 +48,3 @@ operatingSystem:
 
 programmingLanguage:
   - Python
-
-featureList:
-  - decoupler
-  - cellrank
-  - liana
-  - scanpy
-  - infercnv

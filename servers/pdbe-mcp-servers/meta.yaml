@@ -7,11 +7,18 @@ identifier: PDBeurope/PDBe-MCP-Servers
 name: PDBe MCP Servers
 
 description: >
-  A set of Model Context Protocol (MCP) servers that provides seamless access to the Protein Data Bank in Europe (PDBe) API and PDBe Graph Database. This server exposes PDBe's comprehensive structural biology data as MCP tools, enabling direct integration with Claude Desktop and other AI-powered applications.
+  A set of Model Context Protocol (MCP) servers that provides seamless access to the Protein Data Bank
+  in Europe (PDBe) API and PDBe Graph Database. This server exposes PDBe's comprehensive structural biology
+  data as MCP tools, enabling direct integration with Claude Desktop and other AI-powered applications.
 
 codeRepository: https://github.com/PDBeurope/PDBe-MCP-Servers
 
 url: https://github.com/PDBeurope/PDBe-MCP-Servers/blob/main/README.md
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://github.com/PDBeurope/PDBe-MCP-Servers/blob/main/README.md
+  name: Documentation
 
 maintainer:
   - "@type": Organization

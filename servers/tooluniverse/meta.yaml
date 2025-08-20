@@ -7,11 +7,19 @@ identifier: mims-harvard/ToolUniverse
 name: ToolUniverse
 
 description: >
-  ToolUniverse is a collection of biomedical tools designed for use by Agentic AI. It is a critical component of TxAgent, providing the agent with the ability to access and leverage a vast array of biomedical knowledge to solve complex therapeutic reasoning tasks. ToolUniverse includes 211 biomedical tools that address various aspects of drugs and diseases.
+  ToolUniverse is a collection of biomedical tools designed for use by Agentic AI. It is a critical component
+  of TxAgent, providing the agent with the ability to access and leverage a vast array of biomedical knowledge
+  to solve complex therapeutic reasoning tasks. ToolUniverse includes 211 biomedical tools that address
+  various aspects of drugs and diseases.
 
 codeRepository: https://github.com/mims-harvard/ToolUniverse
 
 url: https://zitniklab.hms.harvard.edu/TxAgent/
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://zitniklab.hms.harvard.edu/TxAgent/
+  name: Documentation
 
 maintainer:
   - "@type": Organization
@@ -27,6 +35,11 @@ keywords:
   - TxAgent
   - ToolUniverse
 
+featureList:
+  - FDA
+  - Open Targets
+  - Monarch Initiative
+
 datePublished: "2025-07-13"
 
 operatingSystem:
@@ -34,8 +47,3 @@ operatingSystem:
 
 programmingLanguage:
   - Python
-
-featureList:
-  - FDA
-  - Open Targets
-  - Monarch Initiative

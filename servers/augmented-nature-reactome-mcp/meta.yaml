@@ -13,6 +13,11 @@ codeRepository: https://github.com/Augmented-Nature/Reactome-MCP-Server
 
 url: https://github.com/Augmented-Nature/Reactome-MCP-Server/blob/main/README.md
 
+softwareHelp:
+  "@type": CreativeWork
+  url: https://github.com/Augmented-Nature/Reactome-MCP-Server/blob/main/README.md
+  name: Documentation
+
 maintainer:
   - "@type": Organization
     name: Augmented Nature
@@ -27,6 +32,9 @@ keywords:
   - Reactome
   - Augmented Nature
 
+featureList:
+  - Reactome
+
 datePublished: "2025-06-11"
 
 operatingSystem:
@@ -35,6 +43,3 @@ operatingSystem:
 programmingLanguage:
   - TypeScript
   - JavaScript
-
-featureList:
-  - Reactome
