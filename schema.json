@@ -56,14 +56,30 @@
       "pattern": "^https://(github.com|gitlab.com|bitbucket.org|codeberg.com)(/[a-zA-Z0-9_-]+/[a-zA-Z0-9_.-]+|/record/[0-9]+)(/.*)?$"
     },
     "url": {
-      "description": "URL of the documentation, website or readme for the MCP server",
-      "type": "string",
-      "format": "uri"
-    },
-    "installUrl": {
       "description": "URL of the remotely hosted MCP server (if available)",
       "type": "string",
       "format": "uri"
+    },
+    "softwareHelp": {
+      "description": "Documentation/help resource for the MCP server",
+      "type": "object",
+      "properties": {
+        "@type": {
+          "type": "string",
+          "const": "CreativeWork"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "required": ["@type", "url"],
+      "additionalProperties": false
     },
     "maintainer": {
       "description": "A maintainer of the MCP server",
