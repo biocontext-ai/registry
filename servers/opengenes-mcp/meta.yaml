@@ -1,0 +1,48 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/longevity-genie/opengenes-mcp
+
+identifier: longevity-genie/opengenes-mcp
+
+name: Holy-BIO-MCP's OpenGenes server
+
+description: >
+  A Model Context Protocol server for a curated subset of the OpenGenes database, with specialized focus on lifespan interventions and aging research. The server automatically downloads a focused subset of OpenGenes data containing experimental lifespan data.
+
+codeRepository: https://github.com/longevity-genie/opengenes-mcp
+
+maintainer:
+  - "@type": Person
+    name: Anton Kulaga
+    identifier: antonkulaga
+    url: https://github.com/antonkulaga
+  - "@type": Person
+    name: Livia Zaharia
+    identifier: liviazaharia2020
+    url: https://github.com/liviazaharia2020
+
+license: https://spdx.org/licenses/MIT.html
+
+applicationCategory: HealthApplication
+
+keywords:
+  - opengenes
+  - holy-bio-mcp
+  - aging
+  - longevity
+  - lifespan interventions
+  - gerontology
+  - bioinformatics
+  - genetics
+  - model organisms
+  - human population genetics
+
+programmingLanguage:
+  - Python
+
+featureList:
+  - opengenes_db_query - Execute read-only SQL queries against the OpenGenes database with comprehensive aging research data
+  - opengenes_get_schema_info - Get detailed database schema information including tables, columns, and enumerations
+  - opengenes_example_queries - Get example SQL queries with patterns for common research questions
+  - resource://opengenes_db-prompt - Complete database schema documentation and usage guidelines
+  - resource://opengenes_schema-summary - Formatted summary of database tables and their purposes
