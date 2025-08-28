@@ -81,7 +81,7 @@ jobs:
     timeout-minutes: 5
     steps:
       - name: Wait for deployment to be ready
-        run: sleep 30
+        run: sleep 15
 
       - name: Update registry data
         run: |
@@ -107,11 +107,11 @@ jobs:
 
   update-github-data:
     runs-on: ubuntu-latest
-    needs: deploy-json
+    needs: update-registry
     timeout-minutes: 5
     steps:
       - name: Wait for deployment to be ready
-        run: sleep 30
+        run: sleep 15
 
       - name: Update GitHub stars
         run: |
