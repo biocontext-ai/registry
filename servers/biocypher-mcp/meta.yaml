@@ -1,0 +1,52 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/biocypher/biocypher-mcp
+
+identifier: biocypher/biocypher-mcp
+
+name: BioCypher Knowledge Graph MCP
+
+description: >
+  Knowledge curation, grounding, and harmonisation are complex processes. The BioCypher ecosystem (https://biocypher.org) supports the deterministic mapping of diverse inputs to harmonised graphs. To further simplify the creation and maintenance of BioCypher pipelines, we provide an MCP server with implementation guidelines and structured documentation for LLM co-programmers. The remote Streamable HTTP endpoint can be connected to your favourite copilot software, helping with pipeline creation and adapter design and automation.
+
+codeRepository: https://github.com/biocypher/biocypher-mcp
+
+url: https://mcp.biocypher.org
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://biocypher.org/BioCypher/llms/
+  name: BioCypher LLM Documentation
+
+maintainer:
+  - "@type": Organization
+    name: BioCypher
+    identifier: GitHub: biocypher
+    url: https://github.com/biocypher
+
+license: https://spdx.org/licenses/MIT.html
+
+applicationCategory: DeveloperApplication
+
+keywords:
+  - BioCypher
+  - BioChatter
+  - Knowledge Graph
+  - Harmonisation
+  - Adapter Design
+  - Extract, Transform, Load
+  - Documentation and Usage
+  - Process Automation
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Python
+
+featureList:
+  - Pipeline Setup
+  - Pipeline Planning
+  - Semantic Definition
+  - Adapter Design
+  - Adapter Implementation
