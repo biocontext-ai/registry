@@ -21,7 +21,7 @@ softwareHelp:
 maintainer:
   - "@type": Organization
     name: BioCypher
-    identifier: GitHub: biocypher
+    identifier: "GitHub: biocypher"
     url: https://github.com/biocypher
 
 license: https://spdx.org/licenses/MIT.html
