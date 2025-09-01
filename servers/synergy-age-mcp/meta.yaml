@@ -1,0 +1,45 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/longevity-genie/synergy-age-mcp
+
+identifier: longevity-genie/synergy-age-mcp
+
+name: Holy-BIO-MCP's SynergyAge server
+
+description: >
+  A Model Context Protocol server for the SynergyAge database, providing access to experimentally validated genetic interventions and their synergistic, antagonistic, and epistatic interactions affecting lifespan across model organisms. The server enables AI-assisted research into aging and longevity through structured database queries.
+
+codeRepository: https://github.com/longevity-genie/synergy-age-mcp
+
+maintainer:
+  - "@type": Person
+    name: Anton Kulaga
+    identifier: antonkulaga
+    url: https://github.com/antonkulaga
+  - "@type": Person
+    name: Livia Zaharia
+    identifier: liviazaharia2020
+    url: https://github.com/liviazaharia2020
+
+license: https://spdx.org/licenses/MIT.html
+
+applicationCategory: HealthApplication
+
+keywords:
+  - synergyage
+  - aging
+  - longevity
+  - genetic interactions
+  - lifespan interventions
+  - model organisms
+  - synergistic effects
+  - antagonistic interactions
+  - epistasis
+  - holy-bio-mcp
+
+programmingLanguage:
+  - Python
+
+featureList:
+  - SynergyAge database access - Provides structured access to experimentally validated genetic interventions and their interactions
+  - Aging research queries - Enables AI-assisted research into longevity through database exploration
