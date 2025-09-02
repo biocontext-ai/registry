@@ -1,0 +1,42 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/longevity-genie/pharmacology-mcp
+
+identifier: longevity-genie/pharmacology-mcp
+
+name: Pharmacology-MCP's Guide to PHARMACOLOGY server
+
+description: >
+  A Model Context Protocol server for the Guide to PHARMACOLOGY database, providing access to comprehensive pharmacological data including targets, ligands, interactions, diseases, and families. The server offers both MCP tools for file operations and REST API endpoints for direct data access, enabling AI assistants to query authoritative pharmacological knowledge.
+
+codeRepository: https://github.com/longevity-genie/pharmacology-mcp
+
+maintainer:
+  - "@type": Person
+    name: Anton Kulaga
+    identifier: antonkulaga
+    url: https://github.com/antonkulaga
+
+license: https://spdx.org/licenses/MIT.html
+
+applicationCategory: HealthApplication
+
+keywords:
+  - pharmacology
+  - drug targets
+  - ligands
+  - drug interactions
+  - guide to pharmacology
+  - receptors
+  - enzymes
+  - ion channels
+  - medicinal chemistry
+
+programmingLanguage:
+  - Python
+
+featureList:
+  - Comprehensive pharmacological data access through Guide to PHARMACOLOGY database integration via its REST API
+  - Target and ligand search capabilities with advanced filtering options
+  - Drug interaction analysis and relationship mapping
+  - Disease association data for pharmacological targets

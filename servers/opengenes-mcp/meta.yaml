@@ -41,8 +41,5 @@ programmingLanguage:
   - Python
 
 featureList:
-  - opengenes_db_query - Execute read-only SQL queries against the OpenGenes database with comprehensive aging research data
-  - opengenes_get_schema_info - Get detailed database schema information including tables, columns, and enumerations
-  - opengenes_example_queries - Get example SQL queries with patterns for common research questions
-  - resource://opengenes_db-prompt - Complete database schema documentation and usage guidelines
-  - resource://opengenes_schema-summary - Formatted summary of database tables and their purposes
+  - Lifespan interventions on model organisms
+  - OpenGenes aging research database
