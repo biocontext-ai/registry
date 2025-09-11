@@ -1,0 +1,44 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/biocontext-ai/unofficial-cellosaurus-mcp
+
+identifier: biocontext-ai/unofficial-cellosaurus-mcp
+
+name: Unofficial Cellosaurus MCP
+
+description: >
+  An unofficial Model Context Protocol (MCP) server for the SIB Cellosaurus cell line knowledge resource.
+
+codeRepository: https://github.com/biocontext-ai/unofficial-cellosaurus-mcp
+
+url: https://unofficial-cellosaurus-mcp.fastmcp.app/mcp
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://unofficial-cellosaurus-mcp.readthedocs.io/latest/
+  name: API documentation
+
+maintainer:
+  - "@type": Organization
+    name: BioContextAI
+    identifier: biocontext-ai
+    url: https://github.com/biocontext-ai
+
+license: https://spdx.org/licenses/Apache-2.0.html
+
+applicationCategory: HealthApplication
+
+keywords:
+  - Cellosaurus
+
+datePublished: "2025-09-11"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Python
+
+featureList:
+  - Cellosaurus
+  - Cell lines
