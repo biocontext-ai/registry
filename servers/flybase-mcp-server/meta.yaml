@@ -1,0 +1,40 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/sviatkh/flybase-mcp-server
+
+identifier: sviatkh/flybase-mcp-server
+
+name: FlyBase MCP
+
+description: >
+  This MCP server allows accessing and retrieving information from FlyBase, a comprehensive database for the genetics and molecular biology of Drosophila melanogaster.
+
+codeRepository: https://github.com/sviatkh/flybase-mcp-server
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://github.com/sviatkh/flybase-mcp-server/blob/main/README.md
+  name: FlyBase MCP
+
+maintainer:
+  - "@type": Person
+    name: Sviatoslav Kharuk
+    identifier: sviatkh
+    url: https://github.com/sviatkh
+
+license: https://spdx.org/licenses/Apache-2.0.html
+
+applicationCategory: HealthApplication
+
+keywords:
+  - FlyBase
+  - Drosophila melanogaster
+  - Fruit fly
+
+datePublished: "2025-09-12"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Python
