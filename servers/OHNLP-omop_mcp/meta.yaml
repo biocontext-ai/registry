@@ -1,0 +1,47 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/OHNLP/omop_mcp
+
+additionalType:
+  - https://schema.org/SoftwareSourceCode
+
+identifier: OHNLP/omop_mcp
+
+name: OMOP MCP Server
+
+description: >
+  Model Context Protocol (MCP) server for mapping clinical terminology to Observational Medical Outcomes Partnership (OMOP) concepts using Large Language Models (LLMs).
+
+codeRepository: https://github.com/OHNLP/omop_mcp
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://github.com/OHNLP/omop_mcp#readme
+  name: Documentation
+
+maintainer:
+  - "@type": Organization
+    name: Open Health Natural Language Processing
+    identifier: OHNLP
+    url: https://github.com/OHNLP
+
+license: https://spdx.org/licenses/Apache-2.0.html
+
+applicationCategory: HealthApplication
+
+keywords:
+  - Clinical Terminology
+  - Ontology
+  - Clinical Coding
+
+datePublished: "2025-10-02"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Python
+
+featureList:
+  - OMOP
+  - Observational Medical Outcomes Partnership
