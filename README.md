@@ -60,6 +60,14 @@ Additionally, the following are strongly encouraged (and may become mandatory in
 - Fully typed tools when using dynamic programming languages
 - Comprehensive test suite
 
+We provide a [MCP server cookiecutter template](https://github.com/biocontext-ai/mcp-server-cookiecutter) to help you get started. You can use it to generate a new MCP server by running:
+
+```bash
+uvx cookiecutter https://github.com/biocontext-ai/mcp-server-cookiecutter.git
+```
+
+Just follow the instructions to fill in the details of your MCP server.
+
 ## MCP Server Submission Checklist
 
 Please complete the following checklist in your pull request description. This checklist should be included automatically when opening new PRs.
