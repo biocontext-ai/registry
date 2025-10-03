@@ -8,11 +8,6 @@ on:
   pull_request:
     branches: [main]
   workflow_dispatch:
-    inputs:
-      ref:
-        description: "Branch or tag to run workflow on (use PR branch name)"
-        required: true
-        default: "main"
   schedule:
     # Run on Mondays and Thursdays at 17:00 UTC
     - cron: "0 17 * * 1,4"
@@ -46,6 +41,10 @@ jobs:
         run: |
           mkdir build
           cp mcp.json build/mcp.json
+
+      - name: Get MCP Tools
+        run: |
+          uv run get_mcp_tools --config mcp.json --output build/mcp_tools.json
 
       - name: Build & Deploy Worker
         uses: cloudflare/wrangler-action@v3
