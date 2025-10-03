@@ -1,4 +1,4 @@
-name: Create and deploy MCP JSON
+name: Check MCP Tools
 
 on:
   release:
@@ -13,7 +13,7 @@ on:
     - cron: "0 17 * * 1,4"
 
 jobs:
-  deploy-json:
+  check-mcp-tools:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -33,9 +33,22 @@ jobs:
           curl -LsSf https://astral.sh/uv/install.sh | sh
           echo "$HOME/.cargo/bin" >> $GITHUB_PATH
 
+      - name: Install npm
+        run: |
+          npm install -g npm@latest
+
       - name: Generate MCP JSON
         run: |
           uv run create_mcp_json
+
+      - name: Get MCP Tools
+        run: |
+          uv run get_mcp_tools --config mcp.json --output build/mcp_tools.json
+
+      - name: Copy mcp_tools.json
+        run: |
+          mkdir build
+          cp mcp_tools.json build/mcp_tools.json
 
       - name: Build & Deploy Worker
         uses: cloudflare/wrangler-action@v3
