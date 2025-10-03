@@ -28,8 +28,12 @@ jobs:
 
       - name: Update npm
         run: |
+          echo "Current node version: $(node --version)"
           echo "Current npm version: $(npm --version)"
-          npm install -g npm
+          nvm install 14.7.0
+          nvm install-latest-npm
+          echo "Current node version: $(node --version)"
+          echo "Current npm version: $(npm --version)"
 
       - name: Install uv
         run: |
