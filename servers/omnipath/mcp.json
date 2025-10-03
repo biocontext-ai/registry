@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "saezlab-omnipath-next": {
+      "url": "https://explore.omnipathdb.org/api/mcp"
+    }
+  }
+}
