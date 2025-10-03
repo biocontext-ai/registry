@@ -26,16 +26,6 @@ jobs:
           python-version: "3.11"
           cache-dependency-path: "**/pyproject.toml"
 
-      - name: Update npm
-        run: |
-          echo "Current node version: $(node --version)"
-          echo "Current npm version: $(npm --version)"
-          curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
-          nvm install 14.7.0
-          nvm install-latest-npm
-          echo "Current node version: $(node --version)"
-          echo "Current npm version: $(npm --version)"
-
       - name: Install uv
         run: |
           curl -LsSf https://astral.sh/uv/install.sh | sh
