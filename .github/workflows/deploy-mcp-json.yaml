@@ -44,6 +44,7 @@ jobs:
 
       - name: Copy mcp.json
         run: |
+          mkdir build
           cp mcp.json build/mcp.json
 
       - name: Build & Deploy Worker
