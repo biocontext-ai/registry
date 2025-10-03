@@ -55,7 +55,7 @@ repos:
       - id: validate-mcp-server-names
         name: Validate mcp server names match meta identifiers
         language: python
-        entry: python src/schema_validation/validate_mcp_json_files.py
+        entry: python src/schema_validation/validate_mcp_json_schema.py
         additional_dependencies: [rich, PyYAML]
         files: "servers/.*/mcp.json"
         verbose: true
