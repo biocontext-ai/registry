@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "tianqitang1/enrichr-mcp-server": {
+      "command": "npx",
+      "args": ["-y", "enrichr-mcp-server"]
+    }
+  }
+}
