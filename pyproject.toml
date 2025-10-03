@@ -23,8 +23,13 @@ dependencies = [
     "types-pyyaml>=6.0.12.20250516",
 ]
 
+optional-dependencies.dev = [
+    "pre-commit",
+]
+
 [project.scripts]
 validate_mcp_server_schema = "schema_validation.validate_schema:main"
+create_mcp_json = "schema_validation.create_mcp_json:main"
 
 [tool.hatch.version]
 source = "vcs"
