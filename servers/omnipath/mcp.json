@@ -1,6 +1,6 @@
 {
   "mcpServers": {
-    "saezlab-omnipath-next": {
+    "saezlab/omnipath-next": {
       "url": "https://explore.omnipathdb.org/api/mcp"
     }
   }

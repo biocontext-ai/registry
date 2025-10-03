@@ -12,7 +12,7 @@
       "propertyNames": {
         "description": "MCP server name",
         "type": "string",
-        "pattern": "^[A-Za-z0-9_-]+$"
+        "pattern": "^[A-Za-z0-9_/-]+$"
       },
       "additionalProperties": {
         "oneOf": [

@@ -20,8 +20,7 @@ def load_mcp_server_keys(mcp_path: str) -> list[str]:
 
 
 def expected_server_name(identifier: str) -> str:
-    # Normalize by replacing '/' with '-' (keeps existing case and hyphens as-is)
-    return identifier.replace("/", "-")
+    return identifier
 
 
 def validate_directory(server_dir: str) -> tuple[bool, str]:
