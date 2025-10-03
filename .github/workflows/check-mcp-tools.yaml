@@ -39,12 +39,8 @@ jobs:
 
       - name: Get MCP Tools
         run: |
-          uv run get_mcp_tools --config mcp.json --output build/mcp_tools.json
-
-      - name: Copy mcp_tools.json
-        run: |
           mkdir build
-          cp mcp_tools.json build/mcp_tools.json
+          uv run get_mcp_tools --config mcp.json --output build/mcp_tools.json
 
       - name: Build & Deploy Worker
         uses: cloudflare/wrangler-action@v3
