@@ -34,6 +34,7 @@ validate_mcp_server_schema = "schema_validation.validate_schema:main"
 validate_mcp_json_schema = "schema_validation.validate_mcp_json_schema:main"
 create_mcp_json = "schema_validation.create_mcp_json:main"
 get_mcp_tools = "schema_validation.get_mcp_tools:main"
+check_folder_names = "schema_validation.check_folder_names:main"
 
 [tool.hatch.version]
 source = "vcs"

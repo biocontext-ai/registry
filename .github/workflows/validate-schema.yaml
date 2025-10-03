@@ -35,3 +35,7 @@ jobs:
       - name: Validate mcp.json schema
         run: |
           uv run validate_mcp_json_schema
+
+      - name: Validate folder names
+        run: |
+          uv run check_folder_names
