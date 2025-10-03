@@ -37,6 +37,11 @@ jobs:
         run: |
           uv run create_mcp_json
 
+      - name: Copy mcp.json
+        run: |
+          mkdir build
+          cp mcp.json build/mcp.json
+
       - name: Build & Deploy Worker
         uses: cloudflare/wrangler-action@v3
         with:
