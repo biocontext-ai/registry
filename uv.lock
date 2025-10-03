@@ -1125,6 +1125,7 @@ dependencies = [
     { name = "fastmcp" },
     { name = "json5" },
     { name = "jsonschema" },
+    { name = "pre-commit" },
     { name = "pyyaml" },
     { name = "requests" },
     { name = "rich" },
@@ -1132,24 +1133,18 @@ dependencies = [
     { name = "types-pyyaml" },
 ]
 
-[package.optional-dependencies]
-dev = [
-    { name = "pre-commit" },
-]
-
 [package.metadata]
 requires-dist = [
     { name = "fastmcp", specifier = ">=2.12.4" },
     { name = "json5" },
     { name = "jsonschema" },
-    { name = "pre-commit", marker = "extra == 'dev'" },
+    { name = "pre-commit", specifier = ">=4.3.0" },
     { name = "pyyaml" },
     { name = "requests", specifier = ">=2.32.5" },
     { name = "rich" },
     { name = "types-jsonschema", specifier = ">=4.24.0.20250528" },
     { name = "types-pyyaml", specifier = ">=6.0.12.20250516" },
 ]
-provides-extras = ["dev"]
 
 [[package]]
 name = "six"
