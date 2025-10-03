@@ -26,6 +26,11 @@ jobs:
           python-version: "3.11"
           cache-dependency-path: "**/pyproject.toml"
 
+      - name: Update npm
+        run: |
+          echo "Current npm version: $(npm --version)"
+          npm install -g npm
+
       - name: Install uv
         run: |
           curl -LsSf https://astral.sh/uv/install.sh | sh
@@ -33,8 +38,6 @@ jobs:
 
       - name: Validate schema
         run: |
-          uv venv
-          uv sync
           uv run validate_mcp_server_schema
 
       - name: setup-yq
