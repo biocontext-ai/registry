@@ -5,7 +5,14 @@ on:
     types: [published]
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
+    inputs:
+      ref:
+        description: "Branch or tag to run workflow on (use PR branch name)"
+        required: true
+        default: "main"
   schedule:
     # Run on Mondays and Thursdays at 17:00 UTC
     - cron: "0 17 * * 1,4"
