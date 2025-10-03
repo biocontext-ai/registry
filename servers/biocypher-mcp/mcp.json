@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "biocypher-biocypher-mcp": {
+      "url": "https://mcp.biocypher.org"
+    }
+  }
+}

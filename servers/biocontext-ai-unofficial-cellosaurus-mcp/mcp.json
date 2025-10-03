@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "biocontext-ai-unofficial-cellosaurus-mcp": {
+      "command": "uvx",
+      "args": ["cellosaurus_mcp"]
+    }
+  }
+}

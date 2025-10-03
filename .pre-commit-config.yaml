@@ -26,23 +26,39 @@ repos:
     rev: 0.33.0
     hooks:
       - id: check-jsonschema
-        files: "schema.json"
+        name: Check schema.json and mcp_schema.json for meta schema compliance
+        files: "(schema.json|mcp_schema.json)"
         args: ["--check-metaschema"]
   - repo: https://github.com/python-jsonschema/check-jsonschema
     rev: 0.33.0
     hooks:
       - id: check-jsonschema
+        name: Check meta.yaml files for schema compliance
         files: "servers/.*/meta.yaml"
         args: ["--schemafile", "schema.json"]
+  - repo: https://github.com/python-jsonschema/check-jsonschema
+    rev: 0.33.0
+    hooks:
+      - id: check-jsonschema
+        name: Check mcp.json files for schema compliance
+        files: "servers/.*/mcp.json"
+        args: ["--schemafile", "mcp_schema.json"]
   - repo: local
     hooks:
       - id: forbid-to-commit
         name: Check files in `servers` directory
         language: system
         entry: |
-          Only files named `meta.yaml` are permitted in the servers directory
+          Only files named `meta.yaml` and `mcp.json` are permitted in the servers directory
         files: "^servers/.*"
-        exclude: "^servers/.*/meta.yaml$"
+        exclude: "^servers/.*/(meta.yaml|mcp.json)$"
+      - id: validate-mcp-server-names
+        name: Validate mcp server names match meta identifiers
+        language: python
+        entry: python src/schema_validation/validate_mcp_json_files.py
+        additional_dependencies: [rich, PyYAML]
+        files: "servers/.*/mcp.json"
+        verbose: true
   # template repo registry
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.11.8

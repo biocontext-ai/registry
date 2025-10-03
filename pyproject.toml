@@ -21,10 +21,18 @@ dependencies = [
     "json5",
     "types-jsonschema>=4.24.0.20250528",
     "types-pyyaml>=6.0.12.20250516",
+    "requests>=2.32.5",
+    "fastmcp>=2.12.4",
+]
+
+optional-dependencies.dev = [
+    "pre-commit",
 ]
 
 [project.scripts]
 validate_mcp_server_schema = "schema_validation.validate_schema:main"
+create_mcp_json = "schema_validation.create_mcp_json:main"
+get_mcp_tools = "schema_validation.get_mcp_tools:main"
 
 [tool.hatch.version]
 source = "vcs"

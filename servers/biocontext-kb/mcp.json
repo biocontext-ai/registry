@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "biocontext-ai-knowledgebase-mcp": {
+      "command": "uvx",
+      "args": ["biocontext_kb@latest"]
+    }
+  }
+}
