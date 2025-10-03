@@ -13,7 +13,9 @@ def load_config(mcp_json_path: str) -> dict:
     return config
 
 
-async def get_tools(cfg: dict) -> dict:
+async def get_tools(cfg: dict, *, verbose: bool = False) -> tuple[dict, list[str]]:
+    if verbose:
+        console = Console()
     grouped: dict[str, dict] = {}
     failures = []
     for server in cfg["mcpServers"]:
@@ -46,6 +48,8 @@ async def get_tools(cfg: dict) -> dict:
                             "output_schema": output_schema,
                         }
                     )
+            if verbose:
+                console.print(f"[green]✓[/green] Tools for {server} were successfully retrieved")
         except Exception as e:
             failures.append(f"{server}: {e}")
 
@@ -67,10 +71,15 @@ def main():
         help="Path to output file (defaults to stdout if omitted)",
         default=None,
     )
+    parser.add_argument(
+        "--verbose",
+        action="store_true",
+        help="Enable verbose logging during tool retrieval",
+    )
     args = parser.parse_args()
     cfg = load_config(args.config_path)
 
-    output, failures = asyncio.run(get_tools(cfg))
+    output, failures = asyncio.run(get_tools(cfg, verbose=args.verbose))
 
     console = Console()
 
