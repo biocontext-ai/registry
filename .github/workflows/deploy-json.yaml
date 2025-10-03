@@ -67,6 +67,18 @@ jobs:
             exit 1
           fi
 
+      - name: Generate MCP JSON
+        run: |
+          uv run create_mcp_json
+
+      - name: Copy mcp.json
+        run: |
+          cp mcp.json build/mcp.json
+
+      - name: Get MCP Tools
+        run: |
+          uv run get_mcp_tools --config mcp.json --output build/mcp_tools.json
+
       - name: Build & Deploy Worker
         uses: cloudflare/wrangler-action@v3
         with:
