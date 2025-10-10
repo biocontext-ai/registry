@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "genomoncology/biomcp": {
+      "command": "uvx",
+      "args": ["--from", "biomcp-python", "biomcp", "run"]
+    }
+  }
+}

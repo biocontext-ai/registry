@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "longevity-genie/opengenes-mcp": {
+      "command": "uvx",
+      "args": ["opengenes-mcp"],
+      "env": {
+        "MCP_TRANSPORT": "stdio"
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "longevity-genie/biothings-mcp": {
+      "command": "uvx",
+      "args": ["biothings-mcp"]
+    }
+  }
+}

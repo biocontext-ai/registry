@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "longevity-genie/gget-mcp": {
+      "command": "uvx",
+      "args": ["--from", "gget-mcp@latest", "stdio"]
+    }
+  }
+}

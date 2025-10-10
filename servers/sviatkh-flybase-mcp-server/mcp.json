@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "sviatkh/flybase-mcp-server": {
+      "command": "uvx",
+      "args": ["flybase-mcp-server@latest"],
+      "env": {
+        "UV_PYTHON": "3.11"
+      }
+    }
+  }
+}
