@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "jzinno/biomart-mcp": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "mcp[cli]",
+        "--with",
+        "pybiomart",
+        "python",
+        "-c",
+        "import urllib.request as u,runpy,tempfile,os; p=tempfile.mkstemp()[1]; open(p,'wb').write(u.urlopen('https://raw.githubusercontent.com/jzinno/biomart-mcp/main/biomart-mcp.py').read()); os.chmod(p,0o755); runpy.run_path(p, run_name='__main__')"
+      ]
+    }
+  }
+}

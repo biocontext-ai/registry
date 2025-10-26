@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/biocontext-ai/registry-dev/main/mcp_schema.json",
+  "title": "BioContextAI MCP Client Configuration",
+  "description": "Schema for MCP client configuration files mapping server names to launch configuration.",
+  "type": "object",
+  "properties": {
+    "mcpServers": {
+      "description": "Mapping of MCP server keys to their launch configuration",
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": {
+        "description": "MCP server name",
+        "type": "string",
+        "pattern": "^[A-Za-z0-9_/-]+$"
+      },
+      "additionalProperties": {
+        "oneOf": [
+          {
+            "type": "object",
+            "properties": {
+              "command": {
+                "description": "Executable or command used to start the MCP server",
+                "type": "string",
+                "enum": ["npx", "uvx"]
+              },
+              "args": {
+                "description": "Arguments passed to the command",
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "default": []
+              },
+              "env": {
+                "description": "Environment variables for the server process",
+                "type": "object",
+                "additionalProperties": {
+                  "type": "string"
+                },
+                "default": {}
+              }
+            },
+            "required": ["command"],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "url": {
+                "description": "Remote MCP server URL",
+                "type": "string",
+                "format": "uri"
+              }
+            },
+            "required": ["url"],
+            "additionalProperties": false
+          }
+        ]
+      }
+    }
+  },
+  "required": ["mcpServers"],
+  "additionalProperties": false
+}

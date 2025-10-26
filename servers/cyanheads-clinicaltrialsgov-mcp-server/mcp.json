@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "cyanheads/clinicaltrialsgov-mcp-server": {
+      "command": "npx",
+      "args": ["-y", "clinicaltrialsgov-mcp-server@latest"],
+      "env": {
+        "MCP_LOG_LEVEL": "info"
+      }
+    }
+  }
+}

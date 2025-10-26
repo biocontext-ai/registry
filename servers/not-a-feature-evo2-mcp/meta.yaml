@@ -1,0 +1,44 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/not-a-feature/evo2-mcp
+
+additionalType:
+  - https://schema.org/SoftwareSourceCode
+
+identifier: not-a-feature/evo2-mcp
+
+name: Evo2 MCP
+
+description: >
+  The evo2-mcp server exposes Evo 2 as a MCP server, providing tools for genomic sequence analysis. Any MCP-compatible client can use these tools to score, embed, and generate DNA sequences.
+codeRepository: https://github.com/not-a-feature/evo2-mcp
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://evo2-mcp.readthedocs.io/en/latest/
+  name: Documentation
+
+maintainer:
+  - "@type": Person
+    name: Jules Kreuer
+    identifier: not-a-feature
+    url: https://github.com/not-a-feature
+
+license: https://spdx.org/licenses/LGPL-3.0-only.html
+
+applicationCategory: HealthApplication
+
+keywords:
+  - genomics
+  - evo2
+  - genomic foundation model
+  - sequence generation
+  - snp
+
+datePublished: "2025-10-19"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Python

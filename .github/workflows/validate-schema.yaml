@@ -28,8 +28,14 @@ jobs:
           curl -LsSf https://astral.sh/uv/install.sh | sh
           echo "$HOME/.cargo/bin" >> $GITHUB_PATH
 
-      - name: Validate schema
+      - name: Validate meta.yaml schema
         run: |
-          uv venv
-          uv sync
           uv run validate_mcp_server_schema
+
+      - name: Validate mcp.json schema
+        run: |
+          uv run validate_mcp_json_schema
+
+      - name: Validate folder names
+        run: |
+          uv run check_folder_names

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "Nexgene-Research/nexonco-mcp": {
+      "command": "uvx",
+      "args": ["--from", "nexonco-mcp", "nexonco"]
+    }
+  }
+}
