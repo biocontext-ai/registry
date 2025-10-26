@@ -42,6 +42,13 @@ repos:
         entry: Only meta.yaml and mcp.json are permitted in the servers directory
         files: "^servers/.*"
         exclude: "^servers/.*/(meta.yaml|mcp.json)$"
+      - id: validate-mcp-server-names
+        name: Validate mcp server names match meta identifiers
+        language: python
+        entry: python src/schema_validation/validate_mcp_json_schema.py
+        additional_dependencies: [rich, PyYAML]
+        files: "servers/.*/mcp.json"
+        verbose: true
   # template repo registry
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.11.8
