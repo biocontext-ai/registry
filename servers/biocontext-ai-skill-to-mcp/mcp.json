@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "biocontext-ai/skill-to-mcp": {
+      "command": "uvx",
+      "args": ["skill_to_mcp"]
+    }
+  }
+}

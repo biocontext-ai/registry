@@ -37,12 +37,11 @@ repos:
   - repo: local
     hooks:
       - id: forbid-to-commit
-        name: Check files in `servers` directory
-        language: system
-        entry: |
-          Only files named `meta.yaml` are permitted in the servers directory
+        name: Check forbidden files
+        language: fail
+        entry: Only meta.yaml and mcp.json are permitted in the servers directory
         files: "^servers/.*"
-        exclude: "^servers/.*/meta.yaml$"
+        exclude: "^servers/.*/(meta.yaml|mcp.json)$"
   # template repo registry
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.11.8
