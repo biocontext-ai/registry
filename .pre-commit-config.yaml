@@ -47,7 +47,7 @@ repos:
     hooks:
       - id: forbid-to-commit
         name: Check files in `servers` directory
-        language: system
+        language: fail
         entry: |
           Only files named `meta.yaml` and `mcp.json` are permitted in the servers directory
         files: "^servers/.*"

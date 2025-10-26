@@ -1,0 +1,52 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/biocontext-ai/skill-to-mcp
+
+additionalType:
+  - https://schema.org/SoftwareSourceCode
+
+identifier: biocontext-ai/skill-to-mcp
+
+name: Skill-To-MCP Server
+
+description: >
+  Use your collection of Claude-like AI skills for biomedicine in any environment that supports MCPs (and, where required, code execution).
+
+codeRepository: https://github.com/biocontext-ai/skill-to-mcp
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://github.com/biocontext-ai/skill-to-mcp#readme
+  name: Documentation
+
+maintainer:
+  - "@type": Organization
+    name: BioContextAI
+    identifier: biocontext-ai
+    url: https://github.com/biocontext-ai
+  - "@type": Person
+    name: Malte Kuehl
+    identifier: maltekuehl
+    url: https://github.com/maltekuehl
+
+license: https://spdx.org/licenses/Apache-2.0.html
+
+applicationCategory: UtilitiesApplication
+
+keywords:
+  - Claude Skills
+  - AI Skills
+  - MCP server
+
+datePublished: "2025-10-26"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Python
+
+featureList:
+  - Skills to MCP Server
+  - MCP-powered skills
+  - Skill discovery
