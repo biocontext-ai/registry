@@ -1,8 +1,8 @@
 {
   "mcpServers": {
     "royerlab/napari-mcp": {
-      "command": "uvx",
-      "args": ["napari-mcp"]
+      "command": "uv",
+      "args": ["run", "--with", "napari-mcp", "napari-mcp"]
     }
   }
 }

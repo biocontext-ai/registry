@@ -22,7 +22,7 @@
               "command": {
                 "description": "Executable or command used to start the MCP server",
                 "type": "string",
-                "enum": ["npx", "uvx"]
+                "enum": ["npx", "uvx", "uv"]
               },
               "args": {
                 "description": "Arguments passed to the command",
