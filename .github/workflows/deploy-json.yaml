@@ -110,25 +110,35 @@ jobs:
 
       - name: Update registry data
         run: |
-          response=$(curl -s -w "\n%{http_code}" \
-            -X POST \
-            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
-            -H "Content-Type: application/json" \
-            "https://biocontext.ai/api/registry/update")
+          call_endpoint() {
+            local url="$1"
+            local token="$2"
 
-          http_code=$(echo "$response" | tail -n1)
-          response_body=$(echo "$response" | head -n -1)
+            echo "Calling $url"
 
-          echo "HTTP Status: $http_code"
+            response=$(curl -s -w "\n%{http_code}" \
+              -X POST \
+              -H "Authorization: Bearer ${token}" \
+              -H "Content-Type: application/json" \
+              "$url")
 
-          if [ "$http_code" -eq 200 ]; then
-            echo "✅ Successfully updated registry data!"
-            echo "Response: $response_body"
-          else
-            echo "❌ Failed to update registry data"
-            echo "Response: $response_body"
-            exit 1
-          fi
+            http_code=$(echo "$response" | tail -n1)
+            response_body=$(echo "$response" | head -n -1)
+
+            echo "HTTP Status: $http_code"
+
+            if [ "$http_code" -eq 200 ]; then
+              echo "✅ Successfully updated registry data for $url!"
+              echo "Response: $response_body"
+            else
+              echo "❌ Failed to update registry data for $url"
+              echo "Response: $response_body"
+              exit 1
+            fi
+          }
+
+          call_endpoint "https://biocontext.ai/api/registry/update" "${{ secrets.CRON_SECRET }}"
+          call_endpoint "https://staging.biocontext.ai/api/registry/update" "${{ secrets.CRON_SECRET_STAGING }}"
 
   update-github-data:
     runs-on: ubuntu-latest
@@ -138,44 +148,36 @@ jobs:
       - name: Wait for deployment to be ready
         run: sleep 15
 
-      - name: Update GitHub stars
+      - name: Update GitHub metadata
         run: |
-          response=$(curl -s -w "\n%{http_code}" \
-            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
-            -H "Content-Type: application/json" \
-            "https://biocontext.ai/api/registry/stars")
+          call_endpoint() {
+            local url="$1"
+            local token="$2"
 
-          http_code=$(echo "$response" | tail -n1)
-          response_body=$(echo "$response" | head -n -1)
+            echo "Calling $url"
 
-          echo "HTTP Status: $http_code"
+            response=$(curl -s -w "\n%{http_code}" \
+              -H "Authorization: Bearer ${token}" \
+              -H "Content-Type: application/json" \
+              "$url")
 
-          if [ "$http_code" -eq 200 ]; then
-            echo "✅ Successfully updated GitHub stars!"
-            echo "Response: $response_body"
-          else
-            echo "❌ Failed to update GitHub stars"
-            echo "Response: $response_body"
-            exit 1
-          fi
+            http_code=$(echo "$response" | tail -n1)
+            response_body=$(echo "$response" | head -n -1)
 
-      - name: Update GitHub README content
-        run: |
-          response=$(curl -s -w "\n%{http_code}" \
-            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
-            -H "Content-Type: application/json" \
-            "https://biocontext.ai/api/registry/readme")
+            echo "HTTP Status: $http_code"
 
-          http_code=$(echo "$response" | tail -n1)
-          response_body=$(echo "$response" | head -n -1)
+            if [ "$http_code" -eq 200 ]; then
+              echo "✅ Successfully updated GitHub metadata for $url!"
+              echo "Response: $response_body"
+            else
+              echo "❌ Failed to update GitHub metadata for $url"
+              echo "Response: $response_body"
+              exit 1
+            fi
+          }
 
-          echo "HTTP Status: $http_code"
+          call_endpoint "https://biocontext.ai/api/registry/stars" "${{ secrets.CRON_SECRET }}"
+          call_endpoint "https://staging.biocontext.ai/api/registry/stars" "${{ secrets.CRON_SECRET_STAGING }}"
 
-          if [ "$http_code" -eq 200 ]; then
-            echo "✅ Successfully updated GitHub README content!"
-            echo "Response: $response_body"
-          else
-            echo "❌ Failed to update GitHub README content"
-            echo "Response: $response_body"
-            exit 1
-          fi
+          call_endpoint "https://biocontext.ai/api/registry/readme" "${{ secrets.CRON_SECRET }}"
+          call_endpoint "https://staging.biocontext.ai/api/registry/readme" "${{ secrets.CRON_SECRET_STAGING }}"
