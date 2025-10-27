@@ -1,0 +1,52 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/meringlab/string-mcp
+
+additionalType:
+  - https://schema.org/SoftwareSourceCode
+
+identifier: meringlab/string-mcp
+
+name: STRING MCP Server
+
+description: >
+  Exposes STRING database functionality as an MCP (Model Context Protocol) server. This server wraps STRING API endpoints and makes them available as MCP tools for use with AI agents or other MCP-compatible clients.
+
+codeRepository: https://github.com/meringlab/string-mcp
+
+url: https://mcp.string-db.org/
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://string-db.org/help/mcp/
+  name: Documentation
+
+maintainer:
+  - "@type": Organization
+    name: Christian von Mering's lab
+    identifier: meringlab
+    url: https://github.com/meringlab
+
+license: https://spdx.org/licenses/MIT.html
+
+applicationCategory: HealthApplication
+
+keywords:
+  - STRINGDb
+
+datePublished: "2025-10-27"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Python
+
+featureList:
+  - STRINGDb
+  - Interaction networks
+  - Homology lookups
+  - Protein-protein interactions
+  - Functional terms
+  - Functional annotations
+  - Protein identifiers

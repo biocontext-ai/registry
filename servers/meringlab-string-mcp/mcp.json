@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "meringlab/string-mcp": {
+      "command": "npx",
+      "args": ["mcp-remote", "https://mcp.string-db.org/"]
+    }
+  }
+}
