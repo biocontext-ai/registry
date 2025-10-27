@@ -1,0 +1,46 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/royerlab/napari-mcp
+
+additionalType:
+  - https://schema.org/SoftwareSourceCode
+
+identifier: royerlab/napari-mcp
+
+name: Napari MCP Server
+
+description: >
+  MCP server for remote control of napari viewers via Model Context Protocol (MCP). Perfect for AI-assisted microscopy analysis with Claude Desktop and other LLM applications.
+
+codeRepository: https://github.com/royerlab/napari-mcp
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://royerlab.github.io/napari-mcp/
+  name: Documentation
+
+maintainer:
+  - "@type": Organization
+    name: Royer Lab at CZB SF
+    identifier: royerlab
+    url: https://github.com/royerlab
+
+license: https://spdx.org/licenses/BSD-3-Clause.html
+
+applicationCategory: UtilitiesApplication
+
+keywords:
+  - Napari
+  - Visualization
+
+datePublished: "2025-10-27"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Python
+
+featureList:
+  - Napari
+  - Data exploration
