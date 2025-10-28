@@ -25,7 +25,7 @@ maintainer:
     identifier: mims-harvard
     url: https://github.com/mims-harvard/
 
-license: https://spdx.org/licenses/MIT.html
+license: https://spdx.org/licenses/Apache-2.0.html
 
 applicationCategory: HealthApplication
 
