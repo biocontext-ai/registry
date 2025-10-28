@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "longevity-genie/synergy-age-mcp": {
+      "command": "uvx",
+      "args": ["synergy-age-mcp"]
+    }
+  }
+}

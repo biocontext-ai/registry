@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "PDBeurope/PDBe-MCP-Servers": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--with",
+        "git+https://github.com/PDBeurope/PDBe-MCP-Servers.git",
+        "pdbe-mcp-server",
+        "--server-type",
+        "pdbe_api_server"
+      ]
+    }
+  }
+}

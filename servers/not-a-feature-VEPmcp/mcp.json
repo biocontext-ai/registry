@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "not-a-feature/VEPmcp": {
+      "command": "uvx",
+      "args": ["VEPmcp"]
+    }
+  }
+}

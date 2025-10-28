@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "vrtejus/pymol-mcp": {
+      "command": "uvx",
+      "args": [
+        "--with",
+        "mcp==1.4.0",
+        "python",
+        "-c",
+        "import urllib.request as u,runpy,tempfile,os; p=tempfile.mkstemp()[1]; open(p,'wb').write(u.urlopen('https://raw.githubusercontent.com/vrtejus/pymol-mcp/main/pymol_mcp_server.py').read()); os.chmod(p,0o755); runpy.run_path(p, run_name='__main__')"
+      ]
+    }
+  }
+}

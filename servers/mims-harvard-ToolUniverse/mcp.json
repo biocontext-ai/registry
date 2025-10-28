@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "mims-harvard/ToolUniverse": {
+      "command": "uv",
+      "args": ["run", "--with", "tooluniverse", "tooluniverse-smcp-stdio"]
+    }
+  }
+}

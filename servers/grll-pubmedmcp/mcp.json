@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "grll/pubmedmcp": {
+      "command": "uvx",
+      "args": ["pubmedmcp@latest"]
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "scmcphub/scmcp": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/scmcphub/scmcp",
+        "--with",
+        "agno==1.6.0",
+        "scmcp",
+        "run"
+      ]
+    }
+  }
+}
