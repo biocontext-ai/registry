@@ -20,6 +20,7 @@ maintainer:
   - "@type": Person
     name: Jonathan Schaul
     identifier: jonsch1
+    url: https://github.com/jonsch1
 
 license: https://spdx.org/licenses/GPL-3.0-only.html
 
