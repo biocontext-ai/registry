@@ -15,6 +15,8 @@ description: >
 
 codeRepository: https://github.com/longevity-genie/biothings-mcp
 
+url: https://biothings-mcp.longevity-genie.info/mcp
+
 softwareHelp:
   "@type": CreativeWork
   url: https://example-mcp-server.readthedocs.io

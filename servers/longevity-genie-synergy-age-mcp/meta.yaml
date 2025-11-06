@@ -11,6 +11,8 @@ description: >
 
 codeRepository: https://github.com/longevity-genie/synergy-age-mcp
 
+url: https://synergy-age-mcp.longevity-genie.info/mcp
+
 maintainer:
   - "@type": Person
     name: Anton Kulaga
