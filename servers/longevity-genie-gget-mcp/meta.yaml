@@ -11,6 +11,8 @@ description: >
 
 codeRepository: https://github.com/longevity-genie/gget-mcp
 
+url: https://gget-mcp.longevity-genie.info/mcp
+
 softwareHelp:
   "@type": CreativeWork
   url: https://github.com/longevity-genie/gget-mcp/blob/main/README.md

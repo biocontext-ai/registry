@@ -11,6 +11,8 @@ description: >
 
 codeRepository: https://github.com/longevity-genie/opengenes-mcp
 
+url: https://opengenes-mcp.longevity-genie.info/mcp
+
 maintainer:
   - "@type": Person
     name: Anton Kulaga
