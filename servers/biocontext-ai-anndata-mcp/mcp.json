@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "biocontext-ai/anndata-mcp": {
+      "command": "uvx",
+      "args": ["anndata-mcp"]
+    }
+  }
+}
