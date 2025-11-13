@@ -1,0 +1,54 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/biocontext-ai/anndata-mcp
+
+additionalType:
+  - https://schema.org/SoftwareSourceCode
+
+identifier: biocontext-ai/anndata-mcp
+
+name: anndata-mcp
+
+description: >
+  Allows retrieving information about an AnnData object, including some basic analysis and filtering functionality.
+
+codeRepository: https://github.com/biocontext-ai/anndata-mcp
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://anndata-mcp.readthedocs.io/en/latest/
+  name: Documentation
+
+maintainer:
+  - "@type": Organization
+    name: BioContextAI
+    identifier: biocontext-ai
+    url: https://github.com/biocontext-ai
+  - "@type": Person
+    name: Darius Schaub
+    identifier: dschaub95
+    url: https://github.com/dschaub95
+
+license: https://spdx.org/licenses/MIT.html
+
+applicationCategory: UtilitiesApplication
+
+keywords:
+  - AnnData
+  - single-cell sequencing
+  - RNA
+  - scverse
+
+datePublished: "2025-11-12"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Python
+
+featureList:
+  - AnnData summary
+  - AnnData analysis
+  - Lazy reading
+  - Metadata statistics
