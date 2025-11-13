@@ -33,6 +33,7 @@ create_mcp_json = "schema_validation.create_mcp_json:main"
 get_mcp_tools = "schema_validation.get_mcp_tools:main"
 check_folder_names = "schema_validation.check_folder_names:main"
 check_remote_urls = "schema_validation.check_remote_urls:main"
+filter_remote_urls = "schema_validation.filter_remote_urls:main"
 
 [tool.hatch.version]
 source = "vcs"
