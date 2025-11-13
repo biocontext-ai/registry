@@ -29,12 +29,12 @@ def get_accessible_servers() -> set[str]:
     if not remote_mcp_servers["mcpServers"]:
         return set()
 
-    _, failures = asyncio.run(get_tools(remote_mcp_servers, verbose=False))
+    _, failures = asyncio.run(get_tools(remote_mcp_servers, verbose=False, failures_as_tuples=True))
 
     # Get all server names that were checked
     all_servers = set(remote_mcp_servers["mcpServers"].keys())
     # Accessible servers are those that didn't fail
-    failed_server_names = {failure.split(":")[0] for failure in failures}
+    failed_server_names = {failure[0] for failure in failures}
     accessible_servers = all_servers - failed_server_names
 
     return accessible_servers

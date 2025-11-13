@@ -13,7 +13,7 @@ def load_config(mcp_json_path: str) -> dict:
     return config
 
 
-async def get_tools(cfg: dict, *, verbose: bool = False) -> tuple[dict, list[str]]:
+async def get_tools(cfg: dict, *, verbose: bool = False, failures_as_tuples: bool = False) -> tuple[dict, list[str]]:
     if verbose:
         console = Console()
     grouped: dict[str, dict] = {}
@@ -51,7 +51,10 @@ async def get_tools(cfg: dict, *, verbose: bool = False) -> tuple[dict, list[str
             if verbose:
                 console.print(f"[green]✓[/green] Tools for {server} were successfully retrieved")
         except Exception as e:
-            failures.append(f"{server}: {e}")
+            if failures_as_tuples:
+                failures.append((server, e))
+            else:
+                failures.append(f"{server}: {e}")
 
     output = {"mcp_servers": grouped}
     return output, failures
