@@ -10,7 +10,7 @@ identifier: biocontext-ai/anndata-mcp
 name: anndata-mcp
 
 description: >
-  Allows to retrieve information about an AnnData object, including some basic analysis and filtering functionality.
+  Allows retrieving information about an AnnData object, including some basic analysis and filtering functionality.
 
 codeRepository: https://github.com/biocontext-ai/anndata-mcp
 
@@ -31,11 +31,13 @@ maintainer:
 
 license: https://spdx.org/licenses/MIT.html
 
-applicationCategory: HealthApplication
+applicationCategory: UtilitiesApplication
 
 keywords:
   - AnnData
   - single-cell sequencing
+  - RNA
+  - scverse
 
 datePublished: "2025-11-12"
 
@@ -48,3 +50,5 @@ programmingLanguage:
 featureList:
   - AnnData summary
   - AnnData analysis
+  - Lazy reading
+  - Metadata statistics
