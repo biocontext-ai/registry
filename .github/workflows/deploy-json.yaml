@@ -62,6 +62,10 @@ jobs:
           cat servers/**/meta.yaml
           yq -o=json servers/**/meta.yaml | jq -s . > build/registry.json
 
+      - name: Filter inaccessible remote URLs
+        run: |
+          uv run filter_remote_urls --registry-json build/registry.json
+
       - name: Copy schema.json
         run: |
           cp schema.json build/schema.json
