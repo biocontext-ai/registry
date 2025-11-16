@@ -1,0 +1,55 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/longevity-genie/protein_hunter_mcp
+
+additionalType:
+  - https://schema.org/SoftwareSourceCode
+
+identifier: longevity-genie/protein_hunter_mcp
+
+name: Protein Hunter MCP Server
+
+description: >
+  A conda-less uv + postinstall MCP wrapper of Protein-Hunter that exposes its capabilities to LLMs, including GPU-accelerated Boltz/Chai inference.
+
+codeRepository: https://github.com/longevity-genie/protein_hunter_mcp
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://github.com/longevity-genie/protein_hunter_mcp#readme
+  name: Documentation
+
+maintainer:
+  - "@type": Person
+    name: Newton Winter
+    identifier: longevity-genie
+    url: https://github.com/longevity-genie
+  - "@type": Person
+    name: Anton Kulaga
+    identifier: longevity-genie
+    url: https://github.com/longevity-genie
+
+license: https://spdx.org/licenses/MIT.html
+
+applicationCategory: HealthApplication
+
+keywords:
+  - proteinhunter
+  - chai
+  - boltz
+  - alphafold3
+  - binder
+  - prediction
+  - protein design
+
+datePublished: "2025-11-16"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Python
+
+featureList:
+  - Chai
+  - Boltz
