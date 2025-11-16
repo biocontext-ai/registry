@@ -10,10 +10,7 @@ identifier: longevity-genie/protein_hunter_mcp
 name: Protein Hunter MCP Server
 
 description: >
-  A conda-less uv + postinstall MCP wrapper for https://github.com/yehlincho/Protein-Hunter to expose Protein Hunter capabilites to LLMs
-  Requires CUDA and 24GB (preferably more) vRAM to run Boltz/Chai inference.
-  Supports http/sse/stdio modes.
-  Youtube explaining Protein Hunter https://www.youtube.com/watch?v=GC5ouLbJ93E&feature=youtu.be
+  A conda-less uv + postinstall MCP wrapper of Protein-Hunter that exposes its capabilities to LLMs, including GPU-accelerated Boltz/Chai inference.
 
 codeRepository: https://github.com/longevity-genie/protein_hunter_mcp
 
