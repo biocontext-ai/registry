@@ -1,0 +1,54 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/biocontext-ai/nucleotide_archive_mcp
+
+additionalType:
+  - https://schema.org/SoftwareSourceCode
+
+identifier: biocontext-ai/nucleotide_archive_mcp
+
+name: Nucleotide Archive MCP server
+
+description: >
+  A Model Context Protocol (MCP) server for searching and accessing RNA sequencing datasets from the European Nucleotide Archive (ENA). Find publicly available bulk RNA-seq and single-cell RNA-seq datasets to validate research hypotheses or reproduce published analyses.
+
+codeRepository: https://github.com/biocontext-ai/nucleotide_archive_mcp
+
+url: https://nucleotide-archive-mcp.fastmcp.app/mcp
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://github.com/biocontext-ai/nucleotide_archive_mcp#readme
+  name: Documentation
+
+maintainer:
+  - "@type": Organization
+    name: BioContextAI
+    identifier: biocontext-ai
+    url: https://github.com/biocontext-ai
+
+license: https://spdx.org/licenses/Apache-2.0.html
+
+applicationCategory: UtilitiesApplication
+
+keywords:
+  - RNA sequencing
+  - Single-cell RNA sequencing
+  - European Nucleotide Archive
+  - Sequencing Read Archive
+  - Datasets
+  - ENA
+  - SRA
+
+datePublished: "2025-11-17"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Python
+
+featureList:
+  - ENA search
+  - ENA download
+  - ENA metadata
