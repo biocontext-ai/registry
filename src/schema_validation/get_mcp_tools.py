@@ -3,6 +3,7 @@ import asyncio
 import json
 import sys
 
+import tiktoken
 from fastmcp import Client
 from rich.console import Console
 
@@ -13,11 +14,19 @@ def load_config(mcp_json_path: str) -> dict:
     return config
 
 
-async def get_tools(cfg: dict, *, verbose: bool = False, failures_as_tuples: bool = False) -> tuple[dict, list[str]]:
+async def get_tools(
+    cfg: dict,
+    *,
+    verbose: bool = False,
+    failures_as_tuples: bool = False,
+    tokenizer: str = "o200k_base",
+) -> tuple[dict, list[str]]:
     if verbose:
         console = Console()
     grouped: dict[str, dict] = {}
     failures = []
+    encoding = tiktoken.get_encoding(tokenizer)
+
     for server in cfg["mcpServers"]:
         server_cfg = {"mcpServers": {server: cfg["mcpServers"][server]}}
         try:
@@ -48,6 +57,12 @@ async def get_tools(cfg: dict, *, verbose: bool = False, failures_as_tuples: boo
                             "output_schema": output_schema,
                         }
                     )
+
+            # Calculate token count for this server
+            tools_json = json.dumps(grouped[server]["tools"], indent=2)
+            token_count = len(encoding.encode(tools_json))
+            grouped[server]["token_count"] = token_count
+
             if verbose:
                 console.print(f"[green]✓[/green] Tools for {server} were successfully retrieved")
         except Exception as e:
@@ -60,7 +75,7 @@ async def get_tools(cfg: dict, *, verbose: bool = False, failures_as_tuples: boo
     return output, failures
 
 
-def main():
+def main() -> None:
     parser = argparse.ArgumentParser(description="List MCP tools and schemas from an mcp.json config")
     parser.add_argument(
         "--config",
@@ -79,6 +94,11 @@ def main():
         action="store_true",
         help="Enable verbose logging during tool retrieval",
     )
+    parser.add_argument(
+        "--show-tokens",
+        action="store_true",
+        help="Display estimated token counts for each server's tools",
+    )
     args = parser.parse_args()
     cfg = load_config(args.config_path)
 
@@ -86,11 +106,24 @@ def main():
 
     console = Console()
 
+    if args.show_tokens:
+        # Extract token counts from the output data
+        token_counts = {
+            server: server_data.get("token_count", 0) for server, server_data in output.get("mcp_servers", {}).items()
+        }
+        total_tokens = sum(token_counts.values())
+
+        console.print("\n[bold]Token Usage Estimates:[/bold]")
+        for server, count in token_counts.items():
+            console.print(f"  {server}: [cyan]{count:,}[/cyan] tokens")
+        console.print(f"  [bold]Total: [cyan]{total_tokens:,}[/cyan] tokens[/bold]\n")
+
     if args.output_path:
         with open(args.output_path, "w") as f:
             json.dump(output, f, indent=2, ensure_ascii=False)
     else:
         console.print(json.dumps(output, indent=2))
+
     if failures:
         console.print("[red]✗[/red] Failed to get tools for the following servers:")
         for failure in failures:
