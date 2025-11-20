@@ -11,7 +11,7 @@ description: >
 
 codeRepository: https://github.com/biocypher/biocypher-mcp
 
-url: https://mcp.biocypher.org
+url: https://mcp.biocypher.org/mcp
 
 softwareHelp:
   "@type": CreativeWork
