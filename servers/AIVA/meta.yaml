@@ -1,0 +1,52 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/MHSPL/GenomIQ
+
+additionalType:
+  - https://schema.org/SoftwareSourceCode
+
+identifier: MHSPL/GenomIQ
+
+name: aiva-mcp
+
+description: >
+  AIVA is an explainable diagnostic AI agent that helps clinical analysts by automating variant analysis with the power of GenAI. AIVA-MCP features tools to review recent literature, use our clinical knowledge base for disease-phenotype-gene-drug associations, clinical trials and genomic samples (VCFs).
+
+codeRepository: https://github.com/MHSPL/GenomIQ
+
+url: https://api.aivaportal.com/mcp/sse
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://github.com/MHSPL/GenomIQ/blob/main/README.md
+  name: Documentation
+
+maintainer:
+  - "@type": Person
+    name: Tarun Mamidi
+    identifier: tkmamidi
+    url: https://mamidi.ai
+
+license: https://spdx.org/licenses/GPL-3.0-or-later.html
+
+applicationCategory: HealthApplication
+
+keywords:
+  - variant interpretation
+  - variant analysis
+  - genomics
+  - diagnosis
+
+datePublished: "2025-11-20"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Python
+
+featureList:
+  - pubmed
+  - clinical knowledge graph
+  - clinical trials
+  - VCF analysis

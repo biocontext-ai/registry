@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "AIVA": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://api.aivaportal.com/mcp/sse",
+        "--header",
+        "Authorization: Bearer giq_api_key"
+      ]
+    }
+  }
+}
