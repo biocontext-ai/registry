@@ -1,0 +1,61 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/Thiosemicarbazide222/just-chat-chemistry
+
+additionalType:
+  - https://schema.org/SoftwareSourceCode
+
+identifier: Thiosemicarbazide222/just-chat-chemistry
+
+name: JustChatChemistry
+
+description: >
+  This is a chemistry focused fork of just-chat by Longevity Genie, that adds domain specific tools for chemistry work. It provides an AI chat interface designed to handle chemistry related queries, molecular structure data, and conversions between chemical identifiers such as SMILES strings and IUPAC names.
+
+  The core purpose is to integrate chemistry reasoning into the chat system. It can convert between SMILES and IUPAC names using PubChem, identify functional groups in molecules, retrieve chemical properties such as molecular weight, perform 3D similarity searches for related compounds, and reason about chemistry topics using Large Language Models such as GPT, Claude, Llama 3.3, Deepseek, Mistral, and others.
+
+codeRepository: https://github.com/Thiosemicarbazide222/just-chat-chemistry
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://github.com/Thiosemicarbazide222/just-chat-chemistry#readme
+  name: Documentation
+
+maintainer:
+  - "@type": Person
+    name: Erik B.
+    identifier: Thiosemicarbazide222
+    url: https://github.com/Thiosemicarbazide222
+  - "@type": Person
+    name: Letitia I.
+    identifier: benzisoxazole
+    url: https://github.com/benzisoxazole
+
+license: https://spdx.org/licenses/MIT.html
+
+applicationCategory: EducationApplication
+
+keywords:
+  - ai chemistry assistant
+  - cheminformatics
+  - llm chemistry agent
+  - chemistry chat interface
+  - chemistry ai model
+  - computational chemistry
+
+datePublished: "2025-10-28"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Python
+
+featureList:
+  - molecular analysis
+  - smiles conversion
+  - functional group detection
+  - chemical property retrieval
+  - pubchem integration
+  - 3d similarity search
+  - molecular similarity
