@@ -5,12 +5,6 @@
       "args": [
         "--from",
         "git+https://github.com/scmcphub/scmcp",
-        "--with",
-        "agno==1.6.0",
-        "--with",
-        "lancedb==0.25.2",
-        "--with",
-        "lance-namespace==0.0.21",
         "scmcp",
         "run"
       ]
