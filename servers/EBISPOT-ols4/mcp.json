@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "EBISPOT/ols4": {
+      "command": "npx",
+      "args": ["mcp-remote", "https://www.ebi.ac.uk/ols4/api/mcp"]
+    }
+  }
+}
