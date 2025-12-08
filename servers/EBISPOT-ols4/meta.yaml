@@ -1,0 +1,44 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/EBISPOT/ols4
+
+additionalType:
+  - https://schema.org/SoftwareSourceCode
+
+identifier: EBISPOT/ols4
+
+name: EMBL-EBI Ontology Lookup Service (OLS)
+
+description: >
+  The Ontology Lookup Service (OLS) is a repository for biomedical ontologies that aims to provide a single point of access to the latest ontology versions.
+
+codeRepository: https://github.com/EBISPOT/ols4
+
+url: https://www.ebi.ac.uk/ols4/api/mcp
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://github.com/EBISPOT/ols4#readme
+  name: Documentation
+
+maintainer:
+  - "@type": Person
+    name: James McLaughlin
+    identifier: jamesamcl
+    url: https://github.com/jamesamcl
+
+license: https://spdx.org/licenses/Apache-2.0.html
+
+applicationCategory: ReferenceApplication
+
+keywords:
+  - ontologies
+  - semantics
+
+datePublished: "2006-02-28"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Java
