@@ -26,6 +26,14 @@ maintainer:
     name: James McLaughlin
     identifier: jamesamcl
     url: https://github.com/jamesamcl
+  - "@type": Person
+    name: Henriette Harmse
+    identifier: henrietteharmse
+    url: https://github.com/henrietteharmse
+  - "@type": Person
+    name: Haider Iqbal
+    identifier: haideriqbal
+    url: https://github.com/haideriqbal
 
 license: https://spdx.org/licenses/Apache-2.0.html
 
