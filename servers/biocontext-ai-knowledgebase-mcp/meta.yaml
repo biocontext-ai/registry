@@ -18,7 +18,7 @@ description: >
 
 codeRepository: https://github.com/biocontext-ai/knowledgebase-mcp
 
-url: https://mcp.biocontext.ai/mcp/
+url: https://biocontext-kb.fastmcp.app/mcp
 
 softwareHelp:
   "@type": CreativeWork
