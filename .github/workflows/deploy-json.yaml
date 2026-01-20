@@ -95,6 +95,8 @@ jobs:
       - name: Get MCP Tools
         run: |
           uv run get_mcp_tools --config mcp.json --output build/mcp_tools.json
+        env:
+          PROTOCOLS_IO_ACCESS_TOKEN: ${{ secrets.PROTOCOLS_IO_ACCESS_TOKEN }}
 
       - name: Build & Deploy Worker
         uses: cloudflare/wrangler-action@v3
