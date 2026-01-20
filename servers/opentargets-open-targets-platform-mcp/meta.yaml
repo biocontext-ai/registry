@@ -1,0 +1,49 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/opentargets/open-targets-platform-mcp
+
+additionalType:
+  - https://schema.org/SoftwareSourceCode
+
+identifier: opentargets/open-targets-platform-mcp
+
+name: Open Targets Platform MCP
+
+description: >
+  This MCP provides a purpose-built interface and instructions to access and interpret the data and analyses in the Open Targets Platform. The Open Targets Platform is a comprehensive tool that supports systematic identification and prioritisation of potential therapeutic drug targets, integrating publicly available datasets to build and score target-disease associations. It also integrates relevant annotation information about targets, diseases/phenotypes, drugs, variants, GWAS and molecular QTL studies, and credible sets, as well as their most relevant relationships.
+
+codeRepository: https://github.com/opentargets/open-targets-platform-mcp
+
+url: https://mcp.platform.opentargets.org/mcp
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://github.com/opentargets/open-targets-platform-mcp#readme
+  name: Documentation
+
+maintainer:
+  - "@type": Organization
+    name: OpenTargets
+    identifier: opentargets
+    url: https://github.com/opentargets
+
+license: https://spdx.org/licenses/Apache-2.0.html
+
+applicationCategory: HealthApplication
+
+keywords:
+  - Drug
+  - Disease
+  - Targets
+  - GWAS
+  - eQTL
+  - Variants
+  - Credible Sets
+
+datePublished: "2026-01-12"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Python
