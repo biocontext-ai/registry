@@ -2,7 +2,7 @@
   "mcpServers": {
     "biocontext-ai/protocol-mcp": {
       "command": "uvx",
-      "args": ["protocol-mcp"],
+      "args": ["protocol_mcp"],
       "env": {
         "PROTOCOLS_IO_ACCESS_TOKEN": "ADD_YOUR_TOKEN"
       }
