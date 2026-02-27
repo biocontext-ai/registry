@@ -1,0 +1,50 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/biocontext-ai/meta-mcp
+
+additionalType:
+  - https://schema.org/SoftwareSourceCode
+
+identifier: biocontext-ai/meta-mcp
+
+name: BioContextAI Meta MCP
+
+description: >
+  BioContext AI Meta MCP is an MCP server that provides access to all installable MCP servers in the BioContextAI registry with minimal context consumption. It dynamically connects to servers on demand, uses LLM-powered search to find servers and tools, and generates structured tool calls with JSON schema validation. It enables discovery and exploration of biomedical MCP tools without loading all server metadata upfront.
+
+codeRepository: https://github.com/biocontext-ai/meta-mcp
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://github.com/biocontext-ai/meta-mcp#readme
+  name: Documentation
+
+maintainer:
+  - "@type": Organization
+    name: BioContextAI
+    identifier: biocontext-ai
+    url: https://github.com/biocontext-ai
+  - "@type": Person
+    name: Darius Schaub
+    identifier: dschaub95
+    url: https://github.com/dschaub95
+
+license: https://spdx.org/licenses/MIT.html
+
+applicationCategory: HealthApplication
+
+keywords:
+  - biocontext
+  - utitility
+
+datePublished: "2026-02-27"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Python
+
+featureList:
+  - structured tool calls
+  - dynamic tool discovery
