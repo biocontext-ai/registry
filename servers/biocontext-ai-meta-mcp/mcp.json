@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "biocontext-ai/meta-mcp": {
+      "command": "uvx",
+      "args": ["biocontext-meta"],
+      "env": {
+        "OPENAI_API_KEY": "YOUR OPENAI_API_KEY",
+        "ANTHROPIC_API_KEY": "YOUR ANTHROPIC_API_KEY",
+        "GEMINI_API_KEY": "YOUR GEMINI_API_KEY"
+      }
+    }
+  }
+}
