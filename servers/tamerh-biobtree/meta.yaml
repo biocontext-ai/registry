@@ -1,0 +1,44 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/tamerh/biobtree
+
+additionalType:
+  - https://schema.org/SoftwareSourceCode
+
+identifier: tamerh/biobtree
+
+name: BioBTree v2 MCP server
+
+description: >
+  A unified biomedical graph database that integrates 50+ primary data sources—genes, proteins, compounds, diseases, pathways, and clinical data—into a single queryable graph with billions of cross-reference edges and intiutive query syntax. Built with a native MCP server, it complements the reasoning and contextual power of LLMs with this massive-scale structured biomedical data, overcoming literature bias and eliminating identifier hallucinations.
+
+codeRepository: https://github.com/tamerh/biobtree
+
+url: https://sugi.bio/biobtree/mcp
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://github.com/tamerh/biobtree#readme
+  name: Documentation
+
+maintainer:
+  - "@type": Person
+    name: Tamer Gür
+    identifier: tamerh
+    url: https://github.com/tamerh
+
+license: https://spdx.org/licenses/GPL-3.0-or-later.html
+
+applicationCategory: HealthApplication
+
+keywords:
+  - Knowledgebase
+
+datePublished: "2026-03-11"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Python
+  - Go
