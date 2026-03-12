@@ -10,7 +10,7 @@ identifier: tamerh/biobtree
 name: BioBTree v2 MCP server
 
 description: >
-  A unified biomedical graph database that integrates 50+ primary data sources—genes, proteins, compounds, diseases, pathways, and clinical data—into a single queryable graph with billions of cross-reference edges and intiutive query syntax. Built with a native MCP server, it complements the reasoning and contextual power of LLMs with this massive-scale structured biomedical data, overcoming literature bias and eliminating identifier hallucinations.
+  A unified biomedical graph database that integrates 50+ primary data sources — genes, proteins, compounds, diseases, pathways, and clinical data — into a single queryable graph with billions of cross-reference edges. Its native MCP server gives LLMs direct access to structured, authoritative biomedical data, complementing their reasoning with reliable identifiers and up-to-date database content.
 
 codeRepository: https://github.com/tamerh/biobtree
 
@@ -33,6 +33,26 @@ applicationCategory: HealthApplication
 
 keywords:
   - Knowledgebase
+  - biomedical graph database
+  - cross-reference mapping
+  - drug discovery
+  - genomics
+  - proteomics
+
+featureList:
+  - Cross-database chain queries (e.g. BRCA1 >> ensembl >> uniprot >> pdb)
+  - Identifier mapping across databases (e.g. gene symbols to UniProt, ChEMBL, PDB identifiers)
+  - Tissue and cell-type expression analysis (Bgee, CELLxGENE, Expression Atlas, FANTOM5)
+  - Drug target and bioactivity lookup (ChEMBL, PubChem, BindingDB, HMDB)
+  - Disease-gene associations and clinical variants (ClinVar, MONDO, GenCC, GWAS Catalog, PharmGKB)
+  - Protein structure and function (UniProt, AlphaFold, AlphaMissense, PDB, InterPro)
+  - Pathway and interaction networks (Reactome, STRING, IntAct, BioGRID, SIGNOR)
+  - Gene and variant annotation (Ensembl, HGNC, NCBI Gene, RefSeq, dbSNP)
+  - Ontology traversal (GO, EFO, UBERON, MeSH, HPO)
+  - 50+ integrated databases with billions of cross-reference edges
+  - "Example: What tissues express SCN9A most highly? Are there safety concerns for a Nav1.7 inhibitor?"
+  - "Example: How many ClinVar variants does BRCA1 have? How many are pathogenic?"
+  - "Example: What are all the protein targets of Alectinib with IC50 values?"
 
 datePublished: "2026-03-11"
 
