@@ -40,8 +40,8 @@ keywords:
   - proteomics
 
 featureList:
-  - Cross-database chain queries (e.g. BRCA1 >> ensembl >> uniprot >> pdb)
-  - Identifier mapping across databases (e.g. gene symbols to UniProt, ChEMBL, PDB identifiers)
+  - Cross-database chain queries (Ensembl >> UniProt >> PDB)
+  - Identifier mapping across databases (UniProt, ChEMBL, PDB identifiers)
   - Tissue and cell-type expression analysis (Bgee, CELLxGENE, Expression Atlas, FANTOM5)
   - Drug target and bioactivity lookup (ChEMBL, PubChem, BindingDB, HMDB)
   - Disease-gene associations and clinical variants (ClinVar, MONDO, GenCC, GWAS Catalog, PharmGKB)
@@ -49,10 +49,6 @@ featureList:
   - Pathway and interaction networks (Reactome, STRING, IntAct, BioGRID, SIGNOR)
   - Gene and variant annotation (Ensembl, HGNC, NCBI Gene, RefSeq, dbSNP)
   - Ontology traversal (GO, EFO, UBERON, MeSH, HPO)
-  - 50+ integrated databases with billions of cross-reference edges
-  - "Example: What tissues express SCN9A most highly? Are there safety concerns for a Nav1.7 inhibitor?"
-  - "Example: How many ClinVar variants does BRCA1 have? How many are pathogenic?"
-  - "Example: What are all the protein targets of Alectinib with IC50 values?"
 
 datePublished: "2026-03-11"
 
