@@ -10,8 +10,10 @@ def main() -> None:
     server_dir = "servers"
     mcp_json_contents = []
     for folder in os.listdir(server_dir):
-        mcp_json_path = os.path.join(server_dir, folder, "mcp.json")
-        if os.path.exists(mcp_json_path):
+        folder_path = os.path.join(server_dir, folder)
+        mcp_json_path = os.path.join(folder_path, "mcp.json")
+        mcpskip_path = os.path.join(folder_path, ".mcpskip")
+        if os.path.exists(mcp_json_path) and not os.path.exists(mcpskip_path):
             with open(mcp_json_path) as f:
                 mcp_json_content = json.load(f)
             mcp_json_contents.append(mcp_json_content)

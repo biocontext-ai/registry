@@ -49,9 +49,9 @@ repos:
         name: Check files in `servers` directory
         language: fail
         entry: |
-          Only files named `meta.yaml` and `mcp.json` are permitted in the servers directory
+          Only files named `meta.yaml`, `mcp.json`, and `.mcpskip` are permitted in the servers directory
         files: "^servers/.*"
-        exclude: "^servers/.*/(meta.yaml|mcp.json)$"
+        exclude: "^servers/.*/(meta.yaml|mcp.json|\\.mcpskip)$"
       - id: validate-mcp-server-names
         name: Validate mcp server names match meta identifiers
         language: python
