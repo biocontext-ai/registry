@@ -1,0 +1,62 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/cafferychen777/ChatSpatial
+
+additionalType:
+  - https://schema.org/SoftwareSourceCode
+  - https://schema.org/ScholarlyArticle
+
+identifier: cafferychen777/ChatSpatial
+
+name: ChatSpatial
+
+description: >
+  MCP server for spatial transcriptomics analysis through natural language conversation.
+  Unifies 60+ methods across 15 analytical categories spanning Python and R ecosystems,
+  including cell type annotation, spatial domain identification, deconvolution,
+  cell-cell communication, trajectory analysis, and spatial statistics.
+
+codeRepository: https://github.com/cafferychen777/ChatSpatial
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://cafferyang.com/ChatSpatial/
+  name: Documentation
+
+maintainer:
+  - "@type": Person
+    name: Chen Yang
+    identifier: cafferychen777
+    url: https://github.com/cafferychen777
+
+license: https://spdx.org/licenses/MIT.html
+
+applicationCategory: HealthApplication
+
+keywords:
+  - spatial transcriptomics
+  - single-cell
+  - bioinformatics
+  - spatial genomics
+  - cell communication
+  - deconvolution
+
+datePublished: "2025-11-01"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Python
+
+featureList:
+  - Cell type annotation
+  - Spatial domain identification
+  - Spatial deconvolution
+  - Cell-cell communication analysis
+  - Spatially variable gene detection
+  - Trajectory and RNA velocity analysis
+  - Spatial statistics
+  - Cross-ecosystem Python and R integration
+  - Multi-sample integration
+  - CNV analysis
