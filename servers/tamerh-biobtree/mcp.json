@@ -1,8 +1,7 @@
 {
   "mcpServers": {
     "tamerh/biobtree": {
-      "command": "npx",
-      "args": ["mcp-remote", "https://sugi.bio/biobtree/mcp"]
+      "url": "https://sugi.bio/biobtree/mcp"
     }
   }
 }
