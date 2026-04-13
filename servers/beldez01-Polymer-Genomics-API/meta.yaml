@@ -1,0 +1,52 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/beldez01/Polymer-Genomics-API
+
+additionalType:
+  - https://schema.org/SoftwareSourceCode
+
+identifier: beldez01/Polymer-Genomics-API
+
+name: Polymer Genomics MCP
+
+description: >
+  A genomic reference database exposing DNA biophysics, methylation, expression, transposable elements, and structural annotations as composable MCP tools.
+
+codeRepository: https://github.com/beldez01/Polymer-Genomics-API
+
+url: https://polymerbio.org
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://github.com/beldez01/Polymer-Genomics-API#readme
+  name: Documentation
+
+maintainer:
+  - "@type": Person
+    name: Zach Belden
+    identifier: beldez01
+    url: https://github.com/beldez01
+
+license: https://spdx.org/licenses/MIT.html
+
+applicationCategory: HealthApplication
+
+keywords:
+  - Genomics
+  - Biophysics
+  - Methylation
+  - Epigenetics
+  - DNA Structure
+  - HLA
+  - Transposable Elements
+  - Gene Expression
+
+datePublished: "2026-04-12"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Python
+  - R
+  - TypeScript
