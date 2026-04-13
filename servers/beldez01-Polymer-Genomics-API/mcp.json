@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "beldez01/Polymer-Genomics-API": {
+      "command": "uvx",
+      "args": ["polymer-genomics-mcp"],
+      "env": {
+        "POLYMER_API_BASE": "https://polymer-genomics-api.fly.dev"
+      }
+    }
+  }
+}
