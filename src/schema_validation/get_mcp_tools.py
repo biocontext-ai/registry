@@ -20,7 +20,7 @@ async def get_tools(
     verbose: bool = False,
     failures_as_tuples: bool = False,
     tokenizer: str = "o200k_base",
-) -> tuple[dict, list[str]]:
+) -> tuple[dict, list]:
     if verbose:
         console = Console()
     grouped: dict[str, dict] = {}
@@ -33,6 +33,7 @@ async def get_tools(
             client = Client(server_cfg)
             async with client:
                 tools = await client.list_tools()
+                grouped[server] = {"tools": []}
 
                 for tool in tools:
                     name = getattr(tool, "name", None) or (tool.get("name") if isinstance(tool, dict) else str(tool))
@@ -46,10 +47,7 @@ async def get_tools(
                         getattr(tool, "outputSchema", None) if not isinstance(tool, dict) else tool.get("outputSchema")
                     )
 
-                    group_key = server
-                    if group_key not in grouped:
-                        grouped[group_key] = {"tools": []}
-                    grouped[group_key]["tools"].append(
+                    grouped[server]["tools"].append(
                         {
                             "name": name,
                             "description": description,
@@ -58,10 +56,9 @@ async def get_tools(
                         }
                     )
 
-            # Calculate token count for this server
-            tools_json = json.dumps(grouped[server]["tools"], indent=2)
-            token_count = len(encoding.encode(tools_json))
-            grouped[server]["token_count"] = token_count
+                tools_json = json.dumps(grouped[server]["tools"], indent=2)
+                token_count = len(encoding.encode(tools_json))
+                grouped[server]["token_count"] = token_count
 
             if verbose:
                 console.print(f"[green]✓[/green] Tools for {server} were successfully retrieved")
@@ -128,9 +125,11 @@ def main() -> None:
         console.print("[red]✗[/red] Failed to get tools for the following servers:")
         for failure in failures:
             console.print(f"    [red]{failure}[/red]")
-        sys.exit(1)
     else:
         console.print("[green]✓[/green] Tools for all servers were successfully retrieved")
+
+    if not output.get("mcp_servers") and cfg.get("mcpServers"):
+        sys.exit(1)
 
 
 if __name__ == "__main__":
