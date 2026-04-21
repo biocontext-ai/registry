@@ -35,6 +35,8 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y \
+            build-essential \
+            python3.12-dev \
             libegl1 libgl1 libopengl0 \
             libxkbcommon0 libxkbcommon-x11-0 \
             libxcb-xinerama0 libxcb-cursor0 \
