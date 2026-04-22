@@ -1,0 +1,46 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/MaxMLang/cxg-census-mcp
+
+additionalType:
+  - https://schema.org/SoftwareSourceCode
+
+identifier: MaxMLang/cxg-census-mcp
+
+name: cxg-census-mcp
+
+description: >
+  MCP server for CZ CELLxGENE Discover Census. Single-cell RNA-seq queries, ontology-aware (CL, UBERON, EFO), provenance-tracked. For Claude, Cursor, MCP clients.
+
+codeRepository: https://github.com/MaxMLang/cxg-census-mcp
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://github.com/MaxMLang/cxg-census-mcp#readme
+  name: Documentation
+
+maintainer:
+  - "@type": Person
+    name: Max
+    identifier: MaxMLang
+    url: https://github.com/MaxMLang
+
+license: https://spdx.org/licenses/MIT.html
+
+applicationCategory: HealthApplication
+
+keywords:
+  - bioinformatics
+  - computational-biology
+  - single-cell
+  - single-cell-rna-seq
+  - cellxgene
+  - cellxgene-census
+
+datePublished: "2026-04-22"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Python
