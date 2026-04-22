@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "MaxMLang/cxg-census-mcp": {
+      "command": "uvx",
+      "args": ["--from", "cxg-census-mcp[census]", "cxg-census-mcp"]
+    }
+  }
+}
