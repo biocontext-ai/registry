@@ -1,0 +1,47 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/RNAcentral/rnacentral-mcp-server
+
+additionalType:
+  - https://schema.org/SoftwareSourceCode
+
+identifier: RNAcentral/rnacentral-mcp-server
+
+name: RNAcentral
+
+description: >
+  Enables searching the RNAcentral database for non-coding RNA. You can search for descriptions about a given ncRNA (not all) and can use the sequence search API to search for information about a provided sequence.
+
+  Still very much under development!
+
+codeRepository: https://github.com/RNAcentral/rnacentral-mcp-server
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://github.com/RNAcentral/rnacentral-mcp-server#readme
+  name: Documentation
+
+maintainer:
+  - "@type": Organization
+    name: RNAcentra;
+    identifier: RNAcentral
+    url: https://github.com/RNAcentral
+
+license: https://spdx.org/licenses/MIT.html
+
+applicationCategory: HealthApplication
+
+keywords:
+  - ncRNA
+  - Knowledgebase
+
+datePublished: "2026-03-17"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Python
+
+featureList:
+  - RNAcentral
