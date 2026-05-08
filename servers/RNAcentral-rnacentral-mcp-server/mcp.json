@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "RNAcentral/rnacentral-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/rnacentral/rnacentral-mcp-server.git",
+        "run-server"
+      ]
+    }
+  }
+}
