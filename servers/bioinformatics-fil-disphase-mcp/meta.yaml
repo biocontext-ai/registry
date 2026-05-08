@@ -1,0 +1,50 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://gitlab.com/bioinformatics-fil/disphase-mcp
+
+additionalType:
+  - https://schema.org/SoftwareSourceCode
+
+identifier: bioinformatics-fil/disphase-mcp
+
+name: DisPhaseDB MCP Server
+
+description: >
+  DisPhaseDB MCP enables AI assistants to directly access biologically data of proteins involved in liquid–liquid phase separation (LLPS), including disease-associated mutations, functional regions and condensate associations.
+
+codeRepository: https://gitlab.com/bioinformatics-fil/disphase-mcp
+
+url: https://mcp.disphasedb.leloir.org.ar/mcp
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://gitlab.com/bioinformatics-fil/disphase-mcp#readme
+  name: Documentation
+
+maintainer:
+  - "@type": Organization
+    name: Bioinformatics Unit, Fundación Instituto Leloir
+    identifier: bioinformatics-fil
+    url: https://gitlab.com/bioinformatics-fil
+
+license: https://spdx.org/licenses/AGPL-3.0-only.html
+
+applicationCategory: ReferenceApplication
+
+keywords:
+  - Dataset
+  - Liquid-liquid phase separation
+  - Disease-associated mutations
+  - Protein aggregation
+  - Disordered proteins
+
+datePublished: "2026-05-08"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Python
+
+featureList:
+  - DisPhaseDB
