@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "sib-swiss/sparql-llm": {
+      "command": "uvx",
+      "args": ["sparql-llm"],
+      "env": {
+        "SETTINGS_FILEPATH": "sparql-mcp.json"
+      }
+    }
+  }
+}
