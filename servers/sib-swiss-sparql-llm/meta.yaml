@@ -1,0 +1,62 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/sib-swiss/sparql-llm
+
+additionalType:
+  - https://schema.org/SoftwareSourceCode
+
+identifier: sib-swiss/sparql-llm
+
+name: ExpasyGPT
+
+description: >
+  Provide tools that helps users to access biological data resources from the SIB Swiss Institute of Bioinformatics, such as UniProt, Bgee, Rhea, SwissLipids, through the SPARQL query language.
+
+codeRepository: https://github.com/sib-swiss/sparql-llm
+
+url: https://chat.expasy.org/mcp
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://github.com/sib-swiss/sparql-llm
+  name: Documentation
+
+maintainer:
+  - "@type": Organization
+    name: SIB Swiss Institute of Bioinformatics
+    identifier: sib-swiss
+    url: https://github.com/sib-swiss
+  - "@type": Person
+    name: Vincent Emonet
+    identifier: vemonet
+    url: https://github.com/vemonet
+
+license: https://spdx.org/licenses/MIT.html
+
+applicationCategory: HealthApplication
+
+keywords:
+  - knowledge bases
+  - SPARQL
+  - Protein
+  - Gene
+  - Orthologs
+  - Lipids
+
+datePublished: "2026-06-02"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Python
+
+featureList:
+  - UniProt
+  - Bgee
+  - Rhea
+  - Cellosaurus
+  - OMA
+  - OrthoDB
+  - MetaNetX
+  - SwissLipids
