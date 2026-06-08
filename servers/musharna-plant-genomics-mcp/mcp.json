@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "musharna/plant-genomics-mcp": {
+      "command": "uvx",
+      "args": ["plant-genomics-mcp"]
+    }
+  }
+}
