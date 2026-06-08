@@ -1,0 +1,66 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/musharna/plant-genomics-mcp
+
+additionalType:
+  - https://schema.org/SoftwareSourceCode
+
+identifier: musharna/plant-genomics-mcp
+
+name: Plant Genomics MCP
+
+description: >
+  A Model Context Protocol server providing 32 tools for plant-genomics locus lookup across 11
+  free public backends: Ensembl Plants, Phytozome BioMart, UniProtKB, Europe PMC, QuickGO,
+  NCBI BLAST, Gramene, KEGG, STRING-DB, ATTED-II, and the Bio-Analytic Resource for Plant Biology.
+  Tools take a TAIR-style locus (e.g. AT1G01010) plus an optional organism (slug, scientific name,
+  common name, or NCBI taxid) and return gene metadata, protein and functional annotation (GO,
+  UniProt, KEGG pathways), interactions (STRING), co-expression (ATTED-II/BAR), literature
+  (Europe PMC), and BLAST results — in single-locus, parallel-batch, and cross-source synthesis
+  variants. All tools publish JSON output schemas and EDAM ontology tags.
+
+codeRepository: https://github.com/musharna/plant-genomics-mcp
+
+url: https://pypi.org/project/plant-genomics-mcp/
+
+softwareHelp:
+  "@type": CreativeWork
+  name: README and usage documentation
+  url: https://github.com/musharna/plant-genomics-mcp#readme
+
+maintainer:
+  - "@type": Person
+    name: musharna
+    identifier: musharna
+    url: https://github.com/musharna
+
+license: https://spdx.org/licenses/MIT.html
+
+applicationCategory: ReferenceApplication
+
+keywords:
+  - plant-genomics
+  - genomics
+  - ensembl-plants
+  - uniprot
+  - kegg
+  - string-db
+  - gene-annotation
+  - bioinformatics
+  - functional-genomics
+  - research-data
+
+datePublished: "2026-05-30"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Python
+
+featureList:
+  - 32 tools across 11 backends (Ensembl Plants, Phytozome, UniProtKB, Europe PMC, QuickGO, NCBI BLAST, Gramene, KEGG, STRING-DB, ATTED-II, BAR)
+  - Single-locus, parallel-batch, and cross-source synthesis variants
+  - Organism resolution by slug, scientific name, common name, or NCBI taxid
+  - Functional annotation (GO, UniProt, KEGG), interactions (STRING), and co-expression (ATTED-II/BAR)
+  - JSON output schemas and EDAM ontology tags on every tool
