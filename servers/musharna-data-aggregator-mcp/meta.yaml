@@ -1,0 +1,67 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/musharna/data-aggregator-mcp
+
+additionalType:
+  - https://schema.org/SoftwareSourceCode
+
+identifier: musharna/data-aggregator-mcp
+
+name: Data Aggregator MCP
+
+description: >
+  A Model Context Protocol server that unifies discovery and retrieval of research datasets across
+  Zenodo, DataCite (Dryad / Figshare / Dataverse / OSF), NCBI omics archives (GEO, SRA, BioProject),
+  and the biomedical literature (PubMed, OpenAIRE) behind a single normalized DataResource model.
+  It deduplicates results by DOI, expands organism queries with NCBI Taxonomy synonyms, bridges
+  papers to the omics datasets they produced (e.g. PubMed to GEO / SRA / BioProject), resolves
+  citations and open-access full text, and fetches files to disk with md5 checksum verification.
+  This lets biomedical AI agents find and download sequencing data, supplementary files, and
+  literature from one interface.
+
+codeRepository: https://github.com/musharna/data-aggregator-mcp
+
+url: https://pypi.org/project/data-aggregator-mcp/
+
+softwareHelp:
+  "@type": CreativeWork
+  name: README and usage documentation
+  url: https://github.com/musharna/data-aggregator-mcp#readme
+
+maintainer:
+  - "@type": Person
+    name: musharna
+    identifier: musharna
+    url: https://github.com/musharna
+
+license: https://spdx.org/licenses/MIT.html
+
+applicationCategory: ReferenceApplication
+
+keywords:
+  - datasets
+  - zenodo
+  - datacite
+  - ncbi
+  - sra
+  - geo
+  - pubmed
+  - omics
+  - bioinformatics
+  - research-data
+
+datePublished: "2026-05-30"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Python
+
+featureList:
+  - Federated dataset search across Zenodo, DataCite, NCBI GEO/SRA/BioProject, PubMed, and OpenAIRE
+  - DOI-based deduplication into a single normalized DataResource model
+  - NCBI Taxonomy synonym expansion for organism-scoped queries
+  - Paper-to-data linking (PubMed / OpenAIRE to GEO / SRA / BioProject / DataCite)
+  - Checksum-verified file fetch with archive extraction and HTML-integrity guards
+  - Citation rendering and open-access full-text retrieval (EuropePMC, Unpaywall)
