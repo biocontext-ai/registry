@@ -1,0 +1,53 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/dna-seq/just-prs-mcp
+
+identifier: dna-seq/just-prs-mcp
+
+name: just-prs-mcp
+
+description: >
+  An MCP server for polygenic risk score computation, wrapping the just-prs
+  library and PGS Catalog. Provides PGS Catalog search, VCF normalization,
+  PRS computation, percentile and absolute risk analysis, quality assessment,
+  batch scoring, by-trait reports, and sample genome download.
+
+codeRepository: https://github.com/dna-seq/just-prs-mcp
+
+maintainer:
+  - "@type": Person
+    name: Anton Kulaga
+    identifier: antonkulaga
+    url: https://github.com/antonkulaga
+
+license: https://spdx.org/licenses/MIT.html
+
+applicationCategory: HealthApplication
+
+keywords:
+  - polygenic risk score
+  - prs
+  - pgs-catalog
+  - genomics
+  - vcf
+  - bioinformatics
+  - genetics
+  - precision medicine
+  - risk assessment
+  - longevity
+
+programmingLanguage:
+  - Python
+
+featureList:
+  - PGS Catalog search and score lookup
+  - VCF normalization to Parquet
+  - Polygenic risk score computation
+  - Batch PRS computation across multiple scores
+  - Per-trait PRS reports
+  - Percentile ranking against reference populations
+  - Absolute risk estimation
+  - Quality assessment of computed scores
+  - Sample genome download for testing
+  - Prevalence and epidemiological data lookup
+  - Reference panel scoring (Linux/WSL)
