@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "neurorishika/drosophila-stocks-mcp": {
+      "command": "uvx",
+      "args": ["drosophila-stocks-mcp"],
+      "env": {
+        "UV_PYTHON": "3.12"
+      }
+    }
+  }
+}
