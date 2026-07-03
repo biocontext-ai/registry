@@ -1,0 +1,55 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/YosefLab/scvi-tools-mcp
+
+additionalType:
+  - https://schema.org/SoftwareSourceCode
+
+identifier: YosefLab/scvi-tools-mcp
+
+name: scvi-tools mcp
+
+description: >
+  An MCP (Model Context Protocol) server for deep probabilistic analysis of single-cell omics data using scvi-tools, which gives LLMs structured access to scvi-tools knowledge: model documentation, tutorials, API reference, workflow templates, pretrained Hugging Face Hub models, and community FAQ.
+  No runtime model execution — pure knowledge layer. Works with Claude Desktop, Cursor, and any MCP-compatible client.
+
+codeRepository: https://github.com/YosefLab/scvi-tools-mcp
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://scvi-tools-mcp.readthedocs.io/en/latest/index.html
+  name: Documentation
+
+maintainer:
+  - "@type": Organization
+    name: YosefLab
+    identifier: YosefLab
+    url: https://github.com/YosefLab
+  - "@type": Person
+    name: Ori Kronfeld
+    identifier: ori-kron-wis
+    url: https://github.com/ori-kron-wis
+
+license: https://spdx.org/licenses/BSD-3-Clause.html
+
+applicationCategory: HealthApplication
+
+keywords:
+  - scvi-tools
+  - single-cell
+  - scvi
+  - bioinformatics
+  - machine-learning
+  - variational-inference
+  - deep-learning
+  - vae
+  - scrna-seq
+  - scverse
+
+datePublished: "2026-06-10"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Python

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "YosefLab/scvi-tools-mcp": {
+      "command": "uvx",
+      "args": ["scvi-tools-mcp"]
+    }
+  }
+}

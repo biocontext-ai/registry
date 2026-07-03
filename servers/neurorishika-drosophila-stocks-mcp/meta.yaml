@@ -1,0 +1,45 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/neurorishika/drosophila-stocks-mcp
+
+additionalType:
+  - https://schema.org/SoftwareSourceCode
+
+identifier: neurorishika/drosophila-stocks-mcp
+
+name: Drosophila Stocks MCP
+
+description: >
+  An MCP server that lets AI assistants query Drosophila melanogaster stock centers — Bloomington (BDSC), Kyoto/DGRC, Vienna (VDRC), Korea (KDRC), NIG-FLY, FlyORF, and the National Drosophila Species Stock Center (NDSSC) — by genotype or by gene, using FlyBase's freely redistributable data. FlyBase already integrates the stock records (genotype, stock number, holding center) for all of these collections. This server indexes that bulk data locally for fast search and generates deep links into each center's own ordering system for the parts FlyBase does not track (live availability, price, shipping).
+
+codeRepository: https://github.com/neurorishika/drosophila-stocks-mcp
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://github.com/neurorishika/drosophila-stocks-mcp#readme
+  name: Documentation
+
+maintainer:
+  - "@type": Person
+    name: Rishika Mohanta
+    identifier: neurorishika
+    url: https://github.com/neurorishika
+
+license: https://spdx.org/licenses/MIT.html
+
+applicationCategory: UtilitiesApplication
+
+keywords:
+  - Drosophila
+  - Fruit fly
+  - Flywork
+  - Genetics
+  - Stocks
+
+datePublished: "2026-07-02"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Python

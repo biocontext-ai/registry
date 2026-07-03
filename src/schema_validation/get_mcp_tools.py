@@ -14,59 +14,78 @@ def load_config(mcp_json_path: str) -> dict:
     return config
 
 
-async def get_tools(
+async def _get_server_tools(
+    server_cfg: dict,
+    encoding,
+    *,
+    timeout: float,
+) -> dict:
+    """Connect to a single server and return its tools, bounded by a timeout."""
+
+    async def _run() -> dict:
+        client = Client(server_cfg)
+        async with client:
+            tools = await client.list_tools()
+            collected = []
+            for tool in tools:
+                name = getattr(tool, "name", None) or (tool.get("name") if isinstance(tool, dict) else str(tool))
+                description = getattr(tool, "description", None) or (
+                    tool.get("description", "") if isinstance(tool, dict) else ""
+                )
+                input_schema = (
+                    getattr(tool, "inputSchema", None) if not isinstance(tool, dict) else tool.get("inputSchema")
+                )
+                output_schema = (
+                    getattr(tool, "outputSchema", None) if not isinstance(tool, dict) else tool.get("outputSchema")
+                )
+                collected.append(
+                    {
+                        "name": name,
+                        "description": description,
+                        "input_schema": input_schema,
+                        "output_schema": output_schema,
+                    }
+                )
+
+        tools_json = json.dumps(collected, indent=2)
+        token_count = len(encoding.encode(tools_json))
+        return {"tools": collected, "token_count": token_count}
+
+    return await asyncio.wait_for(_run(), timeout=timeout)
+
+
+async def get_tools(  # noqa: PLR0913
     cfg: dict,
     *,
     verbose: bool = False,
     failures_as_tuples: bool = False,
     tokenizer: str = "o200k_base",
+    timeout: float = 360.0,
+    concurrency: int = 20,
 ) -> tuple[dict, list]:
-    if verbose:
-        console = Console()
+    console = Console() if verbose else None
     grouped: dict[str, dict] = {}
     failures = []
     encoding = tiktoken.get_encoding(tokenizer)
 
-    for server in cfg["mcpServers"]:
+    semaphore = asyncio.Semaphore(concurrency)
+
+    async def worker(server: str) -> None:
         server_cfg = {"mcpServers": {server: cfg["mcpServers"][server]}}
-        try:
-            client = Client(server_cfg)
-            async with client:
-                tools = await client.list_tools()
-                grouped[server] = {"tools": []}
+        async with semaphore:
+            try:
+                grouped[server] = await _get_server_tools(server_cfg, encoding, timeout=timeout)
+                if console is not None:
+                    console.print(f"[green]✓[/green] Tools for {server} were successfully retrieved")
+            except Exception as e:
+                if isinstance(e, asyncio.TimeoutError):
+                    e = TimeoutError(f"timed out after {timeout}s")
+                if failures_as_tuples:
+                    failures.append((server, e))
+                else:
+                    failures.append(f"{server}: {e}")
 
-                for tool in tools:
-                    name = getattr(tool, "name", None) or (tool.get("name") if isinstance(tool, dict) else str(tool))
-                    description = getattr(tool, "description", None) or (
-                        tool.get("description", "") if isinstance(tool, dict) else ""
-                    )
-                    input_schema = (
-                        getattr(tool, "inputSchema", None) if not isinstance(tool, dict) else tool.get("inputSchema")
-                    )
-                    output_schema = (
-                        getattr(tool, "outputSchema", None) if not isinstance(tool, dict) else tool.get("outputSchema")
-                    )
-
-                    grouped[server]["tools"].append(
-                        {
-                            "name": name,
-                            "description": description,
-                            "input_schema": input_schema,
-                            "output_schema": output_schema,
-                        }
-                    )
-
-                tools_json = json.dumps(grouped[server]["tools"], indent=2)
-                token_count = len(encoding.encode(tools_json))
-                grouped[server]["token_count"] = token_count
-
-            if verbose:
-                console.print(f"[green]✓[/green] Tools for {server} were successfully retrieved")
-        except Exception as e:
-            if failures_as_tuples:
-                failures.append((server, e))
-            else:
-                failures.append(f"{server}: {e}")
+    await asyncio.gather(*(worker(server) for server in cfg["mcpServers"]))
 
     output = {"mcp_servers": grouped}
     return output, failures
