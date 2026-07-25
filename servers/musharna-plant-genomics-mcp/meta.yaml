@@ -10,18 +10,19 @@ identifier: musharna/plant-genomics-mcp
 name: Plant Genomics MCP
 
 description: >
-  A Model Context Protocol server providing 32 tools for plant-genomics locus lookup across 11
+  A Model Context Protocol server providing 50 tools for plant-genomics locus lookup across 23
   free public backends: Ensembl Plants, Phytozome BioMart, UniProtKB, Europe PMC, QuickGO,
-  NCBI BLAST, Gramene, KEGG, STRING-DB, ATTED-II, and the Bio-Analytic Resource for Plant Biology.
-  Tools take a TAIR-style locus (e.g. AT1G01010) plus an optional organism (slug, scientific name,
-  common name, or NCBI taxid) and return gene metadata, protein and functional annotation (GO,
-  UniProt, KEGG pathways), interactions (STRING), co-expression (ATTED-II/BAR), literature
-  (Europe PMC), and BLAST results — in single-locus, parallel-batch, and cross-source synthesis
-  variants. All tools publish JSON output schemas and EDAM ontology tags.
+  Planteome, PlantCyc/PMN, g:Profiler, AlphaFold DB, PDBe, InterPro, JASPAR, PANTHER, OrthoDB,
+  AraGWAS, 1001 Genomes, NCBI BLAST, Gramene, KEGG, STRING-DB, ATTED-II, ThaleMine, and the
+  Bio-Analytic Resource for Plant Biology. Tools take a TAIR-style locus (e.g. AT1G01010) plus an
+  optional organism (slug, scientific name, common name, or NCBI taxid) and return gene metadata
+  and sequence, protein structure and domains, functional annotation (GO, UniProt, KEGG,
+  PlantCyc, Plant/Trait Ontology), gene-set enrichment, transcription-factor binding motifs,
+  orthology, interactions, co-expression, natural variation and GWAS, literature, and BLAST
+  results — in single-locus, parallel-batch, and cross-source synthesis variants. All tools
+  publish JSON output schemas, MCP tool annotations, and EDAM ontology tags.
 
 codeRepository: https://github.com/musharna/plant-genomics-mcp
-
-url: https://pypi.org/project/plant-genomics-mcp/
 
 softwareHelp:
   "@type": CreativeWork
@@ -41,14 +42,14 @@ applicationCategory: ReferenceApplication
 keywords:
   - plant-genomics
   - genomics
+  - arabidopsis
   - ensembl-plants
   - uniprot
   - kegg
-  - string-db
+  - protein-structure
   - gene-annotation
-  - bioinformatics
   - functional-genomics
-  - research-data
+  - bioinformatics
 
 datePublished: "2026-05-30"
 
@@ -59,8 +60,12 @@ programmingLanguage:
   - Python
 
 featureList:
-  - 32 tools across 11 backends (Ensembl Plants, Phytozome, UniProtKB, Europe PMC, QuickGO, NCBI BLAST, Gramene, KEGG, STRING-DB, ATTED-II, BAR)
+  - 50 tools across 23 backends (Ensembl Plants, Phytozome, UniProtKB, Europe PMC, QuickGO, Planteome, PlantCyc/PMN, g:Profiler, AlphaFold, PDBe, InterPro, JASPAR, PANTHER, OrthoDB, AraGWAS, 1001 Genomes, NCBI BLAST, Gramene, KEGG, STRING-DB, ATTED-II, ThaleMine, BAR)
   - Single-locus, parallel-batch, and cross-source synthesis variants
   - Organism resolution by slug, scientific name, common name, or NCBI taxid
-  - Functional annotation (GO, UniProt, KEGG), interactions (STRING), and co-expression (ATTED-II/BAR)
-  - JSON output schemas and EDAM ontology tags on every tool
+  - Protein structure and domain architecture (AlphaFold, PDBe, InterPro) and transcription-factor binding motifs (JASPAR)
+  - Natural variation, variant effect prediction, and GWAS associations (Ensembl VEP, AraGWAS, 1001 Genomes)
+  - Functional annotation (GO, UniProt, KEGG, PlantCyc, Plant/Trait Ontology) and gene-set enrichment (g:Profiler)
+  - Predicted and experimental interactions (STRING, ThaleMine/BioGRID/IntAct) and co-expression (ATTED-II/BAR)
+  - JSON output schemas, MCP tool annotations, and EDAM ontology tags on every tool
+  - stdio and Streamable HTTP transports; published to PyPI, GHCR, and the official MCP registry
