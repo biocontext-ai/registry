@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "InterPro/mcp-server": {
+      "command": "npx",
+      "args": ["mcp-remote", "https://www.ebi.ac.uk/interpro/mcp"]
+    }
+  }
+}
