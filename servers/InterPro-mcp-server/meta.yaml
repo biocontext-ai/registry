@@ -1,0 +1,50 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/ebi-pf-team/interpro-mcp
+
+additionalType:
+  - https://schema.org/SoftwareSourceCode
+
+identifier: InterPro/mcp-server
+
+name: InterPro MCP
+
+description: >
+  The InterPro MCP Server exposes the EMBL-EBI InterPro protein classification resource to AI agents over Streamable HTTP. It bridges three complementary services: EBI Search for free-text discovery, the InterPro REST API for authoritative lookups of entries, proteins, GO terms, taxonomy, structures and domain architectures, and the Matches API for fast precomputed sequence-to-domain lookups by MD5. It also runs live InterProScan 6 jobs on the EMBL-EBI Job Dispatcher for novel sequences. Thirteen tools let an agent identify domains from a keyword, annotate UniProt proteins, place families on the tree of life, explore domain architectures, and analysis new sequences.
+
+codeRepository: https://github.com/ebi-pf-team/interpro-mcp
+
+url: https://www.ebi.ac.uk/interpro/mcp
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://ebi-pf-team.github.io/interpro-mcp/
+  name: Documentation
+
+maintainer:
+  - "@type": Person
+    name: Matthias Blum
+    identifier: matthiasblum
+    url: https://github.com/matthiasblum
+
+license: https://spdx.org/licenses/MIT.html
+
+applicationCategory: ReferenceApplication
+
+keywords:
+  - Knowledgebase
+  - InterPro
+  - Protein domains
+  - Protein families
+  - InterProScan
+  - Protein annotation
+  - Functional annotation
+  - Sequence analysis
+
+datePublished: "2026-07-27"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Java
