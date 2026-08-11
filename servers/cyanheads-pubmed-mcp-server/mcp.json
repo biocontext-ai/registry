@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "cyanheads/pubmed-mcp-server": {
+      "command": "npx",
+      "args": ["-y", "@cyanheads/pubmed-mcp-server"],
+      "env": {
+        "MCP_TRANSPORT_TYPE": "stdio",
+        "MCP_LOG_LEVEL": "info",
+        "NCBI_API_KEY": "your-key-here"
+      }
+    }
+  }
+}
