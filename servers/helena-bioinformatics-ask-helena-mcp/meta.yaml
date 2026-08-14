@@ -1,0 +1,53 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/helena-bioinformatics/ask-helena-mcp
+
+additionalType:
+  - https://schema.org/SoftwareSourceCode
+
+identifier: helena-bioinformatics/ask-helena-mcp
+
+name: Ask Helena
+
+description: >
+  Ask Helena is the official public, read-only MCP server from Helena Bioinformatics for questions
+  about Helena Bioinformatics and its published products. It searches an approved public corpus and
+  returns grounded answers or bounded evidence with traceable sources. It excludes private content,
+  patient data and clinical records and does not perform live clinical variant interpretation.
+
+codeRepository: https://github.com/helena-bioinformatics/ask-helena-mcp
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://www.helena.bio/ask
+  name: Ask Helena public website
+
+maintainer:
+  - "@type": Organization
+    name: Helena Bioinformatics
+    identifier: helena-bioinformatics
+    url: https://github.com/helena-bioinformatics
+
+license: https://spdx.org/licenses/Apache-2.0.html
+
+applicationCategory: ScienceApplication
+
+keywords:
+  - Helena Bioinformatics
+  - Public Knowledge
+  - Bioinformatics
+  - Source Citations
+  - Documentation
+  - MCP
+
+datePublished: "2026-08-14"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Python
+
+featureList:
+  - search_public_knowledge
+  - ask_public_knowledge
