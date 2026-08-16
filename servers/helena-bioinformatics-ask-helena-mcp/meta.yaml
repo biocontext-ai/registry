@@ -17,6 +17,8 @@ description: >
 
 codeRepository: https://github.com/helena-bioinformatics/ask-helena-mcp
 
+url: https://api.helena.bio/ask/v1/mcp
+
 softwareHelp:
   "@type": CreativeWork
   url: https://www.helena.bio/ask
@@ -30,7 +32,7 @@ maintainer:
 
 license: https://spdx.org/licenses/Apache-2.0.html
 
-applicationCategory: ScienceApplication
+applicationCategory: ReferenceApplication
 
 keywords:
   - Helena Bioinformatics

@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "helena-bioinformatics/ask-helena-mcp": {
+      "url": "https://api.helena.bio/ask/v1/mcp"
+    }
+  }
+}
