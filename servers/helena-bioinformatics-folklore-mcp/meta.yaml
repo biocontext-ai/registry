@@ -1,0 +1,60 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/helena-bioinformatics/folklore-mcp
+
+additionalType:
+  - https://schema.org/SoftwareSourceCode
+
+identifier: helena-bioinformatics/folklore-mcp
+
+name: Folklore Clinical Variant Interpretation MCP
+
+description: >
+  Helena Bioinformatics MCP for clinical variant interpretation, ACMG/AMP evidence and literature.
+  It provides read-only access to public evidence for supported GRCh38 germline nuclear SNVs and
+  simple indels, with explicit provenance and professional-review limitations. It accepts no patient,
+  phenotype, family, segregation or private case data and does not provide a diagnosis.
+
+codeRepository: https://github.com/helena-bioinformatics/folklore-mcp
+
+url: https://api.helena.bio/folklore/v1/mcp
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://folklore.helena.bio/docs/folklore-connector
+  name: Technical connector guide
+
+maintainer:
+  - "@type": Organization
+    name: Helena Bioinformatics
+    identifier: helena-bioinformatics
+    url: https://github.com/helena-bioinformatics
+
+license: https://spdx.org/licenses/Apache-2.0.html
+
+applicationCategory: HealthApplication
+
+keywords:
+  - Clinical Variant
+  - Variant Interpretation
+  - Germline Variant
+  - ACMG/AMP
+  - Variant Evidence
+  - Variant Literature
+  - Clinical Genetics
+  - Bioinformatics
+  - MCP
+
+datePublished: "2026-08-13"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Python
+
+featureList:
+  - Variant evidence
+  - Variant literature
+  - Publication details
+  - Literature corpus search

@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "helena-bioinformatics/folklore-mcp": {
+      "url": "https://api.helena.bio/folklore/v1/mcp"
+    }
+  }
+}
