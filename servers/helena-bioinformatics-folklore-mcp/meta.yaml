@@ -17,6 +17,8 @@ description: >
 
 codeRepository: https://github.com/helena-bioinformatics/folklore-mcp
 
+url: https://api.helena.bio/folklore/v1/mcp
+
 softwareHelp:
   "@type": CreativeWork
   url: https://folklore.helena.bio/docs/folklore-connector
@@ -52,6 +54,7 @@ programmingLanguage:
   - Python
 
 featureList:
-  - search_variant_evidence
-  - search_variant_literature
-  - get_publication_details
+  - Variant evidence
+  - Variant literature
+  - Publication details
+  - Literature corpus search
