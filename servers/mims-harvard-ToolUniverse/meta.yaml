@@ -7,16 +7,22 @@ identifier: mims-harvard/ToolUniverse
 name: ToolUniverse
 
 description: >
-  ToolUniverse is a collection of biomedical tools designed for use by Agentic AI. It is a critical component
-  of TxAgent, providing the agent with the ability to access and leverage a vast array of biomedical knowledge
-  to solve complex therapeutic reasoning tasks. ToolUniverse includes 211 biomedical tools that address
-  various aspects of drugs and diseases.
+  ToolUniverse is a collection of biomedical and scientific tools designed for use by Agentic AI,
+  usable as a Python SDK or as an MCP server. It originated as the tool layer behind TxAgent and
+  now provides a standalone catalog that a default install loads as more than 2,600 tools. Coverage
+  spans drug and target data (OpenFDA drug labelling and adverse events, ChEMBL, Open Targets,
+  PubChem, DailyMed, RxNorm), clinical evidence (ClinicalTrials.gov), genomics and proteomics
+  (Ensembl, UniProt, Human Protein Atlas, RCSB PDB/PDBe, GWAS Catalog, AlphaFold), pathway and
+  enrichment analysis (Reactome, KEGG, Enrichr), phenotype and disease ontologies (Monarch
+  Initiative, HPO, EFO, Orphanet), and literature retrieval (PubMed, Europe PMC, OpenAlex,
+  Semantic Scholar, bioRxiv/medRxiv), alongside agentic, machine-learning, and scientific
+  software-package tools.
 
 codeRepository: https://github.com/mims-harvard/ToolUniverse
 
 softwareHelp:
   "@type": CreativeWork
-  url: https://zitniklab.hms.harvard.edu/TxAgent/
+  url: https://zitniklab.hms.harvard.edu/ToolUniverse/
   name: Documentation
 
 maintainer:
@@ -32,11 +38,25 @@ applicationCategory: HealthApplication
 keywords:
   - TxAgent
   - ToolUniverse
+  - drug-discovery
+  - clinical-trials
+  - genomics
+  - proteomics
+  - pathway-analysis
+  - literature-search
+  - pharmacovigilance
+  - rare-disease
 
 featureList:
-  - FDA
-  - Open Targets
-  - Monarch Initiative
+  - 2600+ tools loaded by default, exposed through a Python SDK and an MCP server (stdio and HTTP transports)
+  - Drug and target data (OpenFDA drug labelling and adverse events, ChEMBL, Open Targets, PubChem, DailyMed, RxNorm, FDA Orange Book, FDA GSRS)
+  - Clinical evidence and safety (ClinicalTrials.gov, FAERS analytics, CDC and NHANES population data)
+  - Genomics and proteomics (Ensembl, UniProt, Human Protein Atlas, RCSB PDB and PDBe, GWAS Catalog, AlphaFold, AlphaMissense, CELLxGENE Census)
+  - Pathway, network, and enrichment analysis (Reactome, KEGG, Enrichr, STRING, HumanBase, DepMap)
+  - Phenotype and disease ontologies (Monarch Initiative, HPO, EFO, Orphanet, DisGeNET)
+  - Literature and preprint retrieval (PubMed, Europe PMC, OpenAlex, Semantic Scholar, CrossRef, arXiv, bioRxiv/medRxiv, PubTator)
+  - Tool discovery for large catalogs via tool finders and compact mode, which exposes a handful of discovery tools instead of the full catalog
+  - Agentic tools, machine-learning model wrappers, and scientific software-package tools
 
 datePublished: "2025-07-13"
 
