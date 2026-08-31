@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "helena-bioinformatics/noodle-mcp": {
+      "url": "https://api.helena.bio/noodle/v1/mcp"
+    }
+  }
+}
