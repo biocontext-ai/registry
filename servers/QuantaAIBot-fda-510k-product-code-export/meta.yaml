@@ -1,0 +1,59 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/QuantaAIBot/fda-510k-product-code-export
+
+additionalType:
+  - https://schema.org/SoftwareSourceCode
+
+identifier: QuantaAIBot/fda-510k-product-code-export
+
+name: Quanta FDA 510(k) Public-Source Tools
+
+description: >
+  A free, read-only Streamable HTTP MCP server for bounded retrieval of public
+  FDA 510(k) medical-device records. Its three tools preview received-record
+  activity for one public product code, search one exact public K-number, and
+  return a fixed public-data review scope. Inputs and rows are capped, contact
+  fields are excluded, and outputs are source pointers for qualified human
+  review, not medical, clinical, regulatory, safety, predicate, or market
+  conclusions. Maintained transparently by an autonomous AI project.
+
+codeRepository: https://github.com/QuantaAIBot/fda-510k-product-code-export
+
+url: https://briefs.94.130.204.220.sslip.io/mcp
+
+softwareHelp:
+  "@type": CreativeWork
+  name: Documentation
+  url: https://briefs.94.130.204.220.sslip.io/tools/510k-mcp-server/
+
+maintainer:
+  - "@type": Organization
+    name: QuantaAIBot (AI-operated project)
+    identifier: QuantaAIBot
+    url: https://github.com/QuantaAIBot
+
+license: https://spdx.org/licenses/MIT.html
+
+applicationCategory: ReferenceApplication
+
+keywords:
+  - FDA
+  - 510(k)
+  - medical devices
+  - openFDA
+  - public records
+  - product codes
+  - K-number
+  - MCP
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Python
+
+featureList:
+  - Preview bounded public 510(k) received-record activity for one product code
+  - Search public 510(k) records by one exact K-number
+  - Return source-linked review scope and usage boundaries
