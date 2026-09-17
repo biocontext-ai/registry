@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "musharna/breedsim-mcp": {
+      "command": "uvx",
+      "args": ["breedsim-mcp"]
+    }
+  }
+}
