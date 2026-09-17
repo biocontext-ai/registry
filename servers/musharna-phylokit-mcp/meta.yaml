@@ -31,7 +31,7 @@ maintainer:
     identifier: musharna
     url: https://github.com/musharna
 
-license: https://spdx.org/licenses/GPL-2.0.html
+license: https://spdx.org/licenses/GPL-2.0-only.html
 
 applicationCategory: ReferenceApplication
 
@@ -60,4 +60,3 @@ featureList:
   - Tree comparison by Robinson-Foulds distance and the differing clades
   - Alignment simulation along a specified tree (positive control)
   - "Engine capabilities: IQ-TREE version, 215 models, enforced limits"
-  - Tested against the real IQ-TREE engine, no mocked runs; published to PyPI
