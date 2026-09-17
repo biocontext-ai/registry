@@ -59,5 +59,5 @@ featureList:
   - Substitution model selection over 100+ models with AIC/AICc/BIC deltas and disagreement flagged
   - Tree comparison by Robinson-Foulds distance and the differing clades
   - Alignment simulation along a specified tree (positive control)
-  - Engine capabilities: IQ-TREE version, 215 models, enforced limits
+  - "Engine capabilities: IQ-TREE version, 215 models, enforced limits"
   - Tested against the real IQ-TREE engine, no mocked runs; published to PyPI
