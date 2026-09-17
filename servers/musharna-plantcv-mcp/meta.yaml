@@ -1,0 +1,66 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/musharna/plantcv-mcp
+
+additionalType:
+  - https://schema.org/SoftwareSourceCode
+
+identifier: musharna/plantcv-mcp
+
+name: PlantCV MCP
+
+description: >
+  A Model Context Protocol server that exposes PlantCV as a measurement instrument for plant
+  phenotyping. An agent segments an image, is handed back the segmentation overlay it was measured
+  from, refines the mask, and only then measures traits (size, shape, colour, morphology/skeleton,
+  per-plant tray grids, hyperspectral indices, thermal temperatures), with scale calibration from
+  a marker of known size and lens-distortion correction. A degenerate mask raises instead of
+  returning numbers, so a trait is never reported without the pixels it came from.
+
+codeRepository: https://github.com/musharna/plantcv-mcp
+
+softwareHelp:
+  "@type": CreativeWork
+  name: README and usage documentation
+  url: https://github.com/musharna/plantcv-mcp#readme
+
+maintainer:
+  - "@type": Person
+    name: musharna
+    identifier: musharna
+    url: https://github.com/musharna
+
+license: https://spdx.org/licenses/MIT.html
+
+applicationCategory: UtilitiesApplication
+
+keywords:
+  - plant-phenotyping
+  - plantcv
+  - image-analysis
+  - computer-vision
+  - hyperspectral
+  - thermal-imaging
+  - morphology
+  - segmentation
+  - plant-science
+  - bioinformatics
+
+datePublished: "2026-07-28"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Python
+
+featureList:
+  - Segmentation with contact-sheet suggestions per channel/method, returning the overlay and diagnostics before any trait
+  - Mask refinement ops producing a new session with its own overlay
+  - Trait measurement (size, shape, colour) with px-per-mm scale from a calibrated marker
+  - Per-plant measurement over tray grids, and one recipe across many images
+  - Leaf/stem skeleton morphology with a numbered-segment overlay
+  - Hyperspectral (ENVI) sessions from spectral-index thresholds with index statistics
+  - Thermal sessions from a temperature band with max/min/mean/median under the mask
+  - Lens-distortion correction via checkerboard calibration
+  - Refuses degenerate masks and unreadable inputs with typed errors instead of numbers

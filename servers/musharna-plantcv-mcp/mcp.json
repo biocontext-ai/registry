@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "musharna/plantcv-mcp": {
+      "command": "uvx",
+      "args": ["--python", "3.12", "plantcv-mcp"]
+    }
+  }
+}
