@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "gwas-catalog/mcp": {
+      "url": "https://www.ebi.ac.uk/gwas/mcp"
+    }
+  }
+}
