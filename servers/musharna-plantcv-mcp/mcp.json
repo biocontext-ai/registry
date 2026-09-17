@@ -2,7 +2,7 @@
   "mcpServers": {
     "musharna/plantcv-mcp": {
       "command": "uvx",
-      "args": ["plantcv-mcp"]
+      "args": ["--python", "3.12", "plantcv-mcp"]
     }
   }
 }

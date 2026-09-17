@@ -19,8 +19,6 @@ description: >
 
 codeRepository: https://github.com/musharna/plantcv-mcp
 
-url: https://pypi.org/project/plantcv-mcp/
-
 softwareHelp:
   "@type": CreativeWork
   name: README and usage documentation
@@ -34,7 +32,7 @@ maintainer:
 
 license: https://spdx.org/licenses/MIT.html
 
-applicationCategory: ReferenceApplication
+applicationCategory: UtilitiesApplication
 
 keywords:
   - plant-phenotyping
@@ -66,4 +64,3 @@ featureList:
   - Thermal sessions from a temperature band with max/min/mean/median under the mask
   - Lens-distortion correction via checkerboard calibration
   - Refuses degenerate masks and unreadable inputs with typed errors instead of numbers
-  - Published to PyPI and the official MCP registry; runs in an isolated worker process
