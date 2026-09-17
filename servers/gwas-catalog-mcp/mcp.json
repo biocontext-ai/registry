@@ -1,8 +1,7 @@
 {
   "mcpServers": {
     "gwas-catalog/mcp": {
-      "command": "npx",
-      "args": ["mcp-remote", "https://www.ebi.ac.uk/gwas/mcp"]
+      "url": "https://www.ebi.ac.uk/gwas/mcp"
     }
   }
 }
