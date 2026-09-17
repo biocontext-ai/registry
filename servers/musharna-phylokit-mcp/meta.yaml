@@ -1,0 +1,63 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/musharna/phylokit-mcp
+
+additionalType:
+  - https://schema.org/SoftwareSourceCode
+
+identifier: musharna/phylokit-mcp
+
+name: PhyloKit MCP
+
+description: >
+  A Model Context Protocol server for phylogenetic inference over IQ-TREE 2 that never returns a
+  tree topology without its bootstrap support. It infers maximum-likelihood trees with per-clade
+  support, ranks 100+ substitution models by AIC/AICc/BIC and reports when the criteria disagree,
+  compares trees by Robinson-Foulds distance on splits (not strings), and simulates alignments
+  along a given tree as a positive control, all within enforced size limits.
+
+codeRepository: https://github.com/musharna/phylokit-mcp
+
+url: https://pypi.org/project/phylokit-mcp/
+
+softwareHelp:
+  "@type": CreativeWork
+  name: README and usage documentation
+  url: https://github.com/musharna/phylokit-mcp#readme
+
+maintainer:
+  - "@type": Person
+    name: musharna
+    identifier: musharna
+    url: https://github.com/musharna
+
+license: https://spdx.org/licenses/GPL-2.0.html
+
+applicationCategory: ReferenceApplication
+
+keywords:
+  - phylogenetics
+  - iqtree
+  - maximum-likelihood
+  - bootstrap
+  - substitution-models
+  - robinson-foulds
+  - sequence-alignment
+  - evolution
+  - bioinformatics
+
+datePublished: "2026-07-30"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Python
+
+featureList:
+  - Maximum-likelihood tree inference with bootstrap support per clade, always together
+  - Substitution model selection over 100+ models with AIC/AICc/BIC deltas and disagreement flagged
+  - Tree comparison by Robinson-Foulds distance and the differing clades
+  - Alignment simulation along a specified tree (positive control)
+  - Engine capabilities: IQ-TREE version, 215 models, enforced limits
+  - Tested against the real IQ-TREE engine, no mocked runs; published to PyPI
