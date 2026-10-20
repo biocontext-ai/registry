@@ -1,0 +1,57 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/rewire-bio/genomics-mcp
+
+additionalType:
+  - https://schema.org/SoftwareSourceCode
+
+identifier: rewire-bio/genomics-mcp
+
+name: Genomics MCP
+
+description: >
+  Local MCP server for bounded genomic data and versioned reference evidence. Discovers
+  EGA, ENA, ENCODE, GEO and NCBI Datasets records; reads regions from indexed BAM/CRAM,
+  VCF/BCF, FASTA, BED/GFF/GTF and bigWig/bigBed files on local disk, HTTPS or S3; fetches
+  files as local artifacts with checksums; and returns HGNC, Ensembl, ClinVar, gnomAD,
+  UniProt and Open Targets evidence with provenance. Runs on the user's machine; research
+  use only.
+
+codeRepository: https://github.com/rewire-bio/genomics-mcp
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://github.com/rewire-bio/genomics-mcp#readme
+  name: Documentation
+
+maintainer:
+  - "@type": Person
+    name: Tim Richardson
+    identifier: timini
+    url: https://github.com/timini
+
+license: https://spdx.org/licenses/MIT.html
+
+applicationCategory: ReferenceApplication
+
+keywords:
+  - genomics
+  - bioinformatics
+  - sequencing
+  - variants
+  - reference-genomes
+  - clinvar
+
+operatingSystem:
+  - macOS
+  - Linux
+
+programmingLanguage:
+  - Python
+
+featureList:
+  - Archive discovery for EGA, ENA, ENCODE, GEO and NCBI Datasets
+  - Bounded reads, coverage, pileup and variants from indexed BAM/CRAM/VCF/BCF
+  - Sequence, features and signal from FASTA, BED/GFF/GTF and bigWig/bigBed
+  - Checksummed, resumable file transfers to a local workspace
+  - Variant normalization and ClinVar, gnomAD, HGNC, Ensembl, UniProt and Open Targets evidence
