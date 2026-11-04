@@ -1,0 +1,65 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/musharna/breedsim-mcp
+
+additionalType:
+  - https://schema.org/SoftwareSourceCode
+
+identifier: musharna/breedsim-mcp
+
+name: BreedSim MCP
+
+description: >
+  A Model Context Protocol server for breeding-scheme simulation over AlphaSimR that returns
+  distributions, never a single stochastic run. It founds populations with measured linkage
+  disequilibrium and provenance, runs multi-cycle phenotypic or genomic selection programmes
+  reporting per-cycle means, standard deviations and confidence intervals across replicates,
+  compares two programmes by their paired difference with an interval, and attaches typed warnings
+  (non-reproducible founders, no LD, low prediction accuracy, too few replicates, exhausted
+  variance) so a number is never read without its caveat.
+
+codeRepository: https://github.com/musharna/breedsim-mcp
+
+url: https://pypi.org/project/breedsim-mcp/
+
+softwareHelp:
+  "@type": CreativeWork
+  name: README and usage documentation
+  url: https://github.com/musharna/breedsim-mcp#readme
+
+maintainer:
+  - "@type": Person
+    name: musharna
+    identifier: musharna
+    url: https://github.com/musharna
+
+license: https://spdx.org/licenses/GPL-3.0.html
+
+applicationCategory: ReferenceApplication
+
+keywords:
+  - breeding-simulation
+  - alphasimr
+  - quantitative-genetics
+  - genomic-selection
+  - plant-breeding
+  - linkage-disequilibrium
+  - simulation
+  - reproducibility
+  - bioinformatics
+
+datePublished: "2026-07-28"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Python
+
+featureList:
+  - Population founding with generator choice, seed, measured LD and reproducibility provenance
+  - Multi-cycle selection programmes (phenotypic or genomic) reported as per-cycle distributions with 95% CIs
+  - Paired comparison of two programmes with a confidence interval on the difference
+  - Typed warnings for non-determinism, missing LD, low prediction accuracy, few replicates, variance exhaustion
+  - Session provenance and trait-architecture description
+  - Thread pinning for reproducible seeds; tested against real AlphaSimR; published to PyPI and the official MCP registry
