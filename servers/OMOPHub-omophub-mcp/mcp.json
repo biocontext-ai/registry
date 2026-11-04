@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "OMOPHub/omophub-mcp": {
+      "command": "npx",
+      "args": ["-y", "@omophub/omophub-mcp"],
+      "env": {
+        "OMOPHUB_API_KEY": "your-key-here"
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/OMOPHub/omophub-mcp
+
+additionalType:
+  - https://schema.org/SoftwareSourceCode
+
+identifier: OMOPHub/omophub-mcp
+
+name: OMOPHub MCP Server
+
+description: >
+  MCP server for the OHDSI OMOP standardized vocabularies. Search, look up, map and navigate
+  11M+ concepts across 120+ vocabularies, including SNOMED CT, ICD-10, RxNorm and LOINC, from
+  any AI agent. Supports cross-vocabulary mapping, concept hierarchy navigation and concept set
+  building for OMOP CDM ETL, phenotype definitions and observational research. Runs locally via
+  npx or as a hosted remote server, and needs an OMOPHub API key (a free plan is available).
+
+codeRepository: https://github.com/OMOPHub/omophub-mcp
+
+url: https://mcp.omophub.com
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://github.com/OMOPHub/omophub-mcp#readme
+  name: Documentation
+
+maintainer:
+  - "@type": Organization
+    name: OMOPHub
+    identifier: OMOPHub
+    url: https://github.com/OMOPHub
+
+license: https://spdx.org/licenses/MIT.html
+
+applicationCategory: HealthApplication
+
+keywords:
+  - OMOP
+  - OHDSI
+  - Clinical Terminology
+  - Medical Vocabularies
+  - Clinical Coding
+  - Concept Mapping
+  - SNOMED CT
+  - ICD-10
+  - RxNorm
+  - LOINC
+
+datePublished: "2026-10-27"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - TypeScript
+
+featureList:
+  - Concept search across OMOP standardized vocabularies
+  - Concept lookup by ID or source code
+  - Cross-vocabulary mapping (ICD-10, SNOMED CT, RxNorm, LOINC and more)
+  - Concept hierarchy navigation (ancestors and descendants)
+  - Concept set building for cohort and phenotype definitions
