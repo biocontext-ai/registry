@@ -1,0 +1,63 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/pepbank/peptide-research-mcp
+
+additionalType:
+  - https://schema.org/SoftwareSourceCode
+
+identifier: pepbank/peptide-research-mcp
+
+name: PepBank Peptide Research MCP
+
+description: >
+  Read-only peptide research data from PepBank. Look up what studies found about 160+
+  peptides, such as BPC-157, retatrutide, tirzepatide and GHK-Cu, with the papers and
+  registered clinical trials behind each result. Each finding links to the sentence in the
+  paper that supports it and has an evidence class (human, animal, laboratory or predicted).
+  Compare up to five peptides, see the doses that studies used, and check where a peptide is
+  approved. The data is CC BY 4.0. No account is needed, and it accepts no patient data.
+
+codeRepository: https://github.com/pepbank/peptide-research-mcp
+
+url: https://pepbank.io/mcp
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://pepbank.io/developers
+  name: Developer guide
+
+maintainer:
+  - "@type": Organization
+    name: PepBank
+    identifier: pepbank
+    url: https://pepbank.io
+
+license: https://spdx.org/licenses/MIT.html
+
+applicationCategory: HealthApplication
+
+keywords:
+  - Peptides
+  - Clinical Trials
+  - Biomedical Literature
+  - Evidence Synthesis
+  - Pharmacology
+  - GLP-1
+  - PubMed
+  - MCP
+
+datePublished: "2026-11-05"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - JavaScript
+
+featureList:
+  - Evidence summary for one peptide, with studies in people first
+  - Search study findings by outcome and evidence class
+  - Registered clinical trials with NCT numbers
+  - Side-by-side comparison of up to five peptides
+  - Doses used in studies, with species and route
+  - Approval status and the region of each approval
