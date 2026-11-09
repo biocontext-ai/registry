@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "pepbank/peptide-research-mcp": {
+      "url": "https://pepbank.io/mcp"
+    }
+  }
+}
