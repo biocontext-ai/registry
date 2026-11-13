@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "cyanheads/gnomad-genetics-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@cyanheads/gnomad-genetics-mcp-server"
+      ],
+      "env": {
+        "MCP_TRANSPORT_TYPE": "stdio",
+        "MCP_LOG_LEVEL": "info"
+      }
+    }
+  }
+}
