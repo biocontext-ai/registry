@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "cyanheads/medical-codes-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@cyanheads/medical-codes-mcp-server"
+      ],
+      "env": {
+        "MCP_TRANSPORT_TYPE": "stdio",
+        "MCP_LOG_LEVEL": "info"
+      }
+    }
+  }
+}

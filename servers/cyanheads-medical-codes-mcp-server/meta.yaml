@@ -1,0 +1,53 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/cyanheads/medical-codes-mcp-server
+
+additionalType:
+  - https://schema.org/SoftwareSourceCode
+
+identifier: cyanheads/medical-codes-mcp-server
+
+name: medical-codes-mcp-server
+
+description: >
+  Offline lookup and crosswalk of US medical codes: ICD-10-CM, ICD-10-PCS, HCPCS Level II, and RxNorm, including NDC to RxNorm and RxClass drug classes. No API key.
+
+codeRepository: https://github.com/cyanheads/medical-codes-mcp-server
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://github.com/cyanheads/medical-codes-mcp-server#readme
+  name: Documentation
+
+maintainer:
+  - "@type": Person
+    name: Casey Hand
+    identifier: cyanheads
+    url: https://github.com/cyanheads
+
+license: https://spdx.org/licenses/Apache-2.0.html
+
+applicationCategory: HealthApplication
+
+keywords:
+  - ICD-10-CM
+  - ICD-10-PCS
+  - HCPCS
+  - RxNorm
+  - Medical coding
+  - Terminology
+
+datePublished: "2026-11-13"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - TypeScript
+
+featureList:
+  - Code lookup
+  - Code search
+  - Billability check
+  - Hierarchy browsing
+  - Code crosswalks
