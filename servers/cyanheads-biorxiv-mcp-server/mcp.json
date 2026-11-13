@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "cyanheads/biorxiv-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@cyanheads/biorxiv-mcp-server"
+      ],
+      "env": {
+        "MCP_TRANSPORT_TYPE": "stdio",
+        "MCP_LOG_LEVEL": "info"
+      }
+    }
+  }
+}
