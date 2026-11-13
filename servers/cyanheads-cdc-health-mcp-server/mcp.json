@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "cyanheads/cdc-health-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@cyanheads/cdc-health-mcp-server"
+      ],
+      "env": {
+        "MCP_TRANSPORT_TYPE": "stdio",
+        "MCP_LOG_LEVEL": "info"
+      }
+    }
+  }
+}
