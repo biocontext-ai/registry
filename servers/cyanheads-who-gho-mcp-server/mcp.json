@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "cyanheads/who-gho-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@cyanheads/who-gho-mcp-server"
+      ],
+      "env": {
+        "MCP_TRANSPORT_TYPE": "stdio",
+        "MCP_LOG_LEVEL": "info"
+      }
+    }
+  }
+}
