@@ -1,0 +1,54 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/cyanheads/openfda-mcp-server
+
+additionalType:
+  - https://schema.org/SoftwareSourceCode
+
+identifier: cyanheads/openfda-mcp-server
+
+name: openfda-mcp-server
+
+description: >
+  Query openFDA: drug and device adverse events, drug labels and approvals, device clearances, recalls, drug shortages, and NDC lookups, with field-level counts.
+
+codeRepository: https://github.com/cyanheads/openfda-mcp-server
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://github.com/cyanheads/openfda-mcp-server#readme
+  name: Documentation
+
+maintainer:
+  - "@type": Person
+    name: Casey Hand
+    identifier: cyanheads
+    url: https://github.com/cyanheads
+
+license: https://spdx.org/licenses/Apache-2.0.html
+
+applicationCategory: HealthApplication
+
+keywords:
+  - openFDA
+  - FDA
+  - Adverse events
+  - Drug labels
+  - Recalls
+  - Pharmacovigilance
+
+datePublished: "2026-11-13"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - TypeScript
+
+featureList:
+  - Adverse event search
+  - Drug labels
+  - Drug approvals
+  - Device clearances
+  - Recalls
+  - NDC lookup
