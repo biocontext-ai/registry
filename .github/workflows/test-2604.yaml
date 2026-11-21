@@ -1,0 +1,98 @@
+# Throwaway: checks deploy-json on ubuntu-latest (26.04) with python3-dev instead of python3.12-dev. No deploy. Delete after.
+name: Test deploy-json on Ubuntu 26.04
+
+on:
+  push:
+    branches: [test/ubuntu-2604-python3-dev]
+
+jobs:
+  deploy-json:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Show runner OS
+        run: cat /etc/os-release && python3 --version
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache-dependency-path: "**/pyproject.toml"
+
+      - name: Install EGL/OpenGL/Qt deps
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            build-essential \
+            python3-dev \
+            libegl1 libgl1 libopengl0 \
+            libxkbcommon0 libxkbcommon-x11-0 \
+            libxcb-xinerama0 libxcb-cursor0 \
+            libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-render-util0 \
+            mesa-utils libgl1-mesa-dri
+
+      - name: Install uv
+        run: |
+          curl -LsSf https://astral.sh/uv/install.sh | sh
+          echo "$HOME/.cargo/bin" >> $GITHUB_PATH
+
+      - name: Validate schema
+        run: |
+          uv run validate_mcp_server_schema
+
+      - name: setup-yq
+        run: |
+          sudo curl -L "https://github.com/mikefarah/yq/releases/download/v4.28.2/yq_linux_amd64" > /usr/local/bin/yq
+          sudo chmod +x /usr/local/bin/yq
+
+      - name: Generate JSON
+        run: |
+          mkdir build
+          touch build/.nojekyll
+          cat servers/**/meta.yaml
+          yq -o=json servers/**/meta.yaml | jq -s . > build/registry.json
+
+      - name: Filter inaccessible remote URLs
+        run: |
+          uv run filter_remote_urls --registry-json build/registry.json
+
+      - name: Copy schema.json
+        run: |
+          cp schema.json build/schema.json
+
+      - name: Check if JSON is empty
+        run: |
+          if [ ! -s build/registry.json ] || [ "$(cat build/registry.json)" = "[]" ]; then
+            echo "Error: Generated JSON is empty"
+            exit 1
+          fi
+
+      - name: Check if schema.json exists and is not empty
+        run: |
+          if [ ! -s build/schema.json ]; then
+            echo "Error: schema.json is empty or does not exist"
+            exit 1
+          fi
+
+      - name: Generate MCP JSON
+        run: |
+          uv run create_mcp_json
+
+      - name: Copy mcp.json
+        run: |
+          cp mcp.json build/mcp.json
+
+      - name: Get MCP Tools
+        run: |
+          uv run get_mcp_tools --config mcp.json --output build/mcp_tools.json
+        env:
+          PROTOCOLS_IO_ACCESS_TOKEN: ${{ secrets.PROTOCOLS_IO_ACCESS_TOKEN }}
