@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "medley/fda-data-mcp": {
+      "url": "https://www.regdatalab.com/mcp"
+    }
+  }
+}
