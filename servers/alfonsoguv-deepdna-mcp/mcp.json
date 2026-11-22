@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "alfonsoguv/deepdna-mcp": {
+      "url": "https://deepdna.ai/mcp"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/alfonsoguv/deepdna-mcp
+
+additionalType:
+  - https://schema.org/SoftwareSourceCode
+
+identifier: alfonsoguv/deepdna-mcp
+
+name: DeepDNA
+
+description: >
+  Cited pharmacogenomic and gene-variant lookups for AI agents. The hosted,
+  read-only server needs no API key and has five tools: list the curated genes,
+  look up a gene, look up a variant by rsID, look up drug–gene guidance (CPIC or
+  DPWG where a guideline exists, otherwise an FDA label or the primary
+  literature), and screen a list of generic drug names for curated drug–gene
+  records. It is a small, reviewed set, and every record lists its sources. It
+  takes no genotype and does not work out a metabolizer status or a dose. The
+  repository also holds an MIT-licensed local package (deepdna-mcp on PyPI) that
+  reads a 23andMe, AncestryDNA or MyHeritage raw data file on the user's
+  computer and reports what it shows at the curated positions. Educational
+  information, not medical advice.
+
+codeRepository: https://github.com/alfonsoguv/deepdna-mcp
+
+url: https://deepdna.ai/mcp
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://deepdna.ai/docs/#mcp
+  name: Documentation
+
+maintainer:
+  - "@type": Organization
+    name: DeepDNA
+    identifier: alfonsoguv
+    url: https://github.com/alfonsoguv
+
+license: https://spdx.org/licenses/MIT.html
+
+applicationCategory: ReferenceApplication
+
+keywords:
+  - pharmacogenomics
+  - PGx
+  - CPIC
+  - DPWG
+  - drug-gene interactions
+  - rsID
+  - genetic variants
+  - medication screening
+  - raw DNA data
+  - genomics
+
+datePublished: "2026-11-08"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - Python
+
+featureList:
+  - Drug–gene guidance with CPIC or DPWG sources
+  - Medication list screen for curated drug–gene records
+  - Gene records with key variants and phenotypes
+  - Variant lookup by rsID
+  - Local reading of a raw DNA file at curated positions
