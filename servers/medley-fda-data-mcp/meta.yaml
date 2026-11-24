@@ -10,11 +10,11 @@ identifier: medley/fda-data-mcp
 name: RegDataLab FDA MCP Server
 
 description: >
-  Hosted MCP server for public FDA records. Connect Claude, ChatGPT, Cursor or any MCP client
-  to https://www.regdatalab.com/mcp and look up company-matched inspections, Form 483s,
-  warning letters, recalls, import alerts, 510(k)s and labels. Free to start (50 credits at
-  signup, 300 per month after verification, no card). A stdio wrapper is also available:
-  npx -y fda-data-mcp.
+  Hosted MCP server for public FDA compliance records. Connect Claude, ChatGPT, Cursor or any
+  MCP client to https://www.regdatalab.com/mcp and look up company-matched inspections, Form
+  483 observations, warning letters, recalls, import alerts, 510(k) decisions, PMA approvals
+  and drug labels, each linked to its FDA source. Sign in with an email address; a free plan
+  needs no card. A stdio wrapper is also available: npx -y fda-data-mcp.
 
 codeRepository: https://github.com/medley/fda-data-mcp
 
