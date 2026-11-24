@@ -1,0 +1,65 @@
+"@context": https://schema.org
+"@type": SoftwareApplication
+"@id": https://github.com/medley/fda-data-mcp
+
+additionalType:
+  - https://schema.org/SoftwareSourceCode
+
+identifier: medley/fda-data-mcp
+
+name: RegDataLab FDA MCP Server
+
+description: >
+  Hosted MCP server for public FDA compliance records. Connect Claude, ChatGPT, Cursor or any
+  MCP client to https://www.regdatalab.com/mcp and look up company-matched inspections, Form
+  483 observations, warning letters, recalls, import alerts, 510(k) decisions, PMA approvals
+  and drug labels, each linked to its FDA source. Sign in with an email address; a free plan
+  needs no card. A stdio wrapper is also available: npx -y fda-data-mcp.
+
+codeRepository: https://github.com/medley/fda-data-mcp
+
+url: https://www.regdatalab.com/mcp
+
+softwareHelp:
+  "@type": CreativeWork
+  url: https://www.regdatalab.com/fda-mcp-server
+  name: Documentation
+
+maintainer:
+  - "@type": Organization
+    name: The RegDataLab team
+    identifier: medley
+    url: https://github.com/medley
+
+license: https://spdx.org/licenses/MIT.html
+
+applicationCategory: HealthApplication
+
+keywords:
+  - FDA
+  - MCP
+  - Form 483
+  - Warning letters
+  - Inspections
+  - Recalls
+  - Import alerts
+  - Regulatory
+  - Compliance
+  - openFDA
+
+datePublished: "2026-11-21"
+
+operatingSystem:
+  - Cross-platform
+
+programmingLanguage:
+  - JavaScript
+
+featureList:
+  - Hosted MCP endpoint
+  - Company-matched inspections
+  - Form 483 citations
+  - Warning letters
+  - Recalls and import alerts
+  - 510(k)s and labels
+  - Manufacturing risk summary
